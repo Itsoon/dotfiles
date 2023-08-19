@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(zsh-autosuggestions git zsh-syntax-highlighting history-substring-search)
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -100,8 +100,10 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 
+alias neoconf="nvim /home/odin/.config/neofetch/config.conf"
+alias ls="logo-ls -A"
 alias code="com.visualstudio.code"
-alias zshconfig="sudo nano ~/.zshrc"
+alias zshconfig="sudo -E nvim ~/.zshrc"
 alias polybar-path="cd ~/.config/polybar/"
 alias polybar-conf="code ~/.config/polybar/config.ini"
 # alias ohmyzsh = "~/.oh-my-zsh/.oh-my-zsh.sh"
@@ -110,4 +112,3 @@ alias polybar-conf="code ~/.config/polybar/config.ini"
 export PATH=$PATH:/home/odin/.spicetify
 
 # Terminal run command
-neofetch
