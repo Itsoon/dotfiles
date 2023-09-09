@@ -14,3 +14,7 @@ Change `oh-my-zsh folder` to `.oh-my-zsh`
 
 flatpak :
 `/home/user/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/`
+
+### Konsole
+
+`/home/user/.local/share/konsole/`
