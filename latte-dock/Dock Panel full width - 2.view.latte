@@ -26,7 +26,7 @@ immutability=1
 plugin=adhe.textcommand
 
 [Containments][14][Applets][109][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][14][Applets][109][Configuration][Appearance]
 command=
@@ -38,6 +38,13 @@ textLabel=
 DialogHeight=1014
 DialogWidth=1900
 
+[Containments][14][Applets][120]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][14][Applets][120][Configuration]
+PreloadWeight=0
+
 [Containments][14][Applets][45]
 immutability=1
 plugin=adhe.textcommand
@@ -48,12 +55,13 @@ PreloadWeight=0
 [Containments][14][Applets][45][Configuration][Appearance]
 fixedFont=true
 fontSize=18
+paddingLeft=4
 paddingRight=4
-textLabel=1 2 〉
+textLabel=1  2 〉
 
 [Containments][14][Applets][45][Configuration][ConfigDialog]
-DialogHeight=1014
-DialogWidth=1900
+DialogHeight=1002
+DialogWidth=1888
 
 [Containments][14][Applets][61]
 immutability=1
@@ -70,8 +78,8 @@ noWindowText=Desktop
 rightSpacing=0
 
 [Containments][14][Applets][61][Configuration][ConfigDialog]
-DialogHeight=1014
-DialogWidth=1900
+DialogHeight=1022
+DialogWidth=1908
 
 [Containments][14][Applets][62]
 immutability=1
@@ -85,7 +93,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][14][Applets][64][Configuration]
-PreloadWeight=7
+PreloadWeight=0
 
 [Containments][14][Applets][64][Configuration][General]
 currentTab=streams
@@ -119,24 +127,24 @@ boldText=true
 customDateFormat=MM/dd\s
 dateFormat=customDate
 fixedFont=true
-fontFamily=JetBrains Mono
+fontFamily=Ubuntu
 fontSize=18
 showSeparator=false
 
 [Containments][14][Applets][69][Configuration][ConfigDialog]
-DialogHeight=1014
-DialogWidth=1900
+DialogHeight=408
+DialogWidth=933
 
 [Containments][14][Applets][76]
 immutability=1
 plugin=com.github.zren.batterytime
 
 [Containments][14][Applets][76][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][14][Applets][76][Configuration][ConfigDialog]
-DialogHeight=1014
-DialogWidth=1900
+DialogHeight=490
+DialogWidth=933
 
 [Containments][14][Applets][76][Configuration][General]
 showBatteryIcon=false
@@ -147,14 +155,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][14][Applets][77][Configuration]
-PreloadWeight=67
+PreloadWeight=0
 
 [Containments][14][Applets][93]
 immutability=1
 plugin=adhe.textcommand
 
 [Containments][14][Applets][93][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][14][Applets][93][Configuration][Appearance]
 command=
@@ -162,15 +170,15 @@ paddingLeft=0
 textLabel=Patchouly
 
 [Containments][14][Applets][93][Configuration][ConfigDialog]
-DialogHeight=1014
-DialogWidth=1900
+DialogHeight=408
+DialogWidth=933
 
 [Containments][14][Applets][94]
 immutability=1
 plugin=adhe.textcommand
 
 [Containments][14][Applets][94][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][14][Applets][94][Configuration][Appearance]
 command=
@@ -193,7 +201,7 @@ PreloadWeight=0
 advanced=false
 alignment=10
 alignmentUpgraded=true
-appletOrder=45;109;61;77;76;65;64;62;93;94;69
+appletOrder=45;109;61;120;77;76;65;64;62;93;94;69
 appletShadowsEnabled=false
 autoSizeEnabled=false
 backgroundRadius=38
@@ -215,9 +223,10 @@ shadowSize=45
 shadows=All
 shadowsUpgraded=true
 showGlow=false
-splitterPosition=4
-splitterPosition2=5
+splitterPosition=5
+splitterPosition2=6
 tasksUpgraded=true
+themeColors=SmartThemeColors
 thickMargin=10
 titleTooltips=false
 zoomLevel=0
