@@ -1,7 +1,7 @@
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
-ColorEffect=0
+ColorEffect=1
 ContrastAmount=0.65
 ContrastEffect=1
 IntensityAmount=0.1
@@ -76,7 +76,7 @@ ForegroundVisited=155,89,182
 
 [Colors:Selection]
 BackgroundAlternate=91,96,120
-BackgroundNormal=70,45,116
+BackgroundNormal=102,0,255
 DecorationFocus=62,67,91
 DecorationHover=103,109,136
 ForegroundActive=125,196,228
@@ -118,8 +118,8 @@ ForegroundVisited=209,97,246
 
 [Colors:Window]
 BackgroundAlternate=36,39,58
-BackgroundNormal=17,17,17
-DecorationFocus=62,67,91
+BackgroundNormal=15,15,15
+DecorationFocus=89,0,243
 DecorationHover=103,109,136
 ForegroundActive=125,196,228
 ForegroundInactive=184,192,224
@@ -133,16 +133,17 @@ ForegroundVisited=209,97,246
 [General]
 ColorScheme=Scratchy
 Name=catppuccin
-TitlebarIsAccentColored=false
+TintFactor=0.45
+TitlebarIsAccentColored=true
 shadeSortColumn=true
 
 [KDE]
 contrast=4
 
 [WM]
-activeBackground=24,25,38
-activeBlend=24,25,38
+activeBackground=68,255,0
+activeBlend=77,255,0
 activeForeground=202,211,245
-inactiveBackground=24,25,38
+inactiveBackground=4,255,0
 inactiveBlend=161,169,177
 inactiveForeground=184,192,224
