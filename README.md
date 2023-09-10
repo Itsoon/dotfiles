@@ -18,3 +18,7 @@ flatpak :
 ### Konsole
 
 `/home/user/.local/share/konsole/`
+
+### Gtk Application Style
+
+`Skeuos-White-Dark`
