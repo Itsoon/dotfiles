@@ -22,3 +22,11 @@ flatpak :
 ### Gtk Application Style
 
 `Skeuos-White-Dark`
+
+### Sddm
+
+`/usr/share/sddm/themes/`
+
+for move folder use :
+
+`mv /path/to/file/source /path/to/file/destination`
