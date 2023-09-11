@@ -30,3 +30,7 @@ flatpak :
 for move folder use :
 
 `mv /path/to/file/source /path/to/file/destination`
+
+### Splash sreen :
+
+`/home/odin/.local/share/plasma/look-and-feel/`
