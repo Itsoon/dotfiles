@@ -34,3 +34,7 @@ for move folder use :
 ### Splash sreen :
 
 `/home/odin/.local/share/plasma/look-and-feel/`
+
+### Picom
+
+`/etc/xdg/`
