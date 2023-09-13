@@ -19,27 +19,26 @@
 
 import QtQuick 2.1
 
-
 Image {
     id: root
     source: "images/background.png"
 
     property int stage
 
+    property string logoSource: "logo.png"
+
     onStageChanged: {
         if (stage == 1) {
             introAnimation.running = true
         }
     }
+
     Image {
         id: topRect
         anchors.horizontalCenter: parent.horizontalCenter
         y: root.height
         source: "images/rectangle.svg"
-        Image {
-            source: "images/tux.png"
-            anchors.centerIn: parent
-        }
+        
         Rectangle {
             radius: 4
             color: "#2a2a2b"
@@ -59,11 +58,18 @@ Image {
                 }
                 width: (parent.width / 6) * (stage - 1)
                 color: "#5900F3"
-                Behavior on width { 
-                    PropertyAnimation {
-                        duration: 250
-                        easing.type: Easing.InOutQuad
-                    }
+            }
+        }
+
+        Image {
+            source: "images/" + root.logoSource
+            anchors.centerIn: parent
+            transformOrigin: Item.Center
+            scale: 0
+            Behavior on scale {
+                NumberAnimation {
+                    duration: 1500
+                    easing.type: Easing.InOutQuad
                 }
             }
         }
@@ -74,13 +80,21 @@ Image {
         running: false
 
         ParallelAnimation {
-            PropertyAnimation {
-                property: "y"
+            NumberAnimation {
+                properties: "y"
                 target: topRect
                 to: root.height / 3
                 duration: 1000
                 easing.type: Easing.InOutBack
                 easing.overshoot: 1.0
+            }
+
+            NumberAnimation {
+                properties: "scale"
+                target: topRect.children[1]
+                to: 1
+                duration: 1000
+                easing.type: Easing.InOutQuad
             }
 
             PropertyAnimation {
