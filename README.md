@@ -38,3 +38,19 @@ for move folder use :
 ### Picom
 
 `/etc/xdg/`
+
+### Install package
+
+#### AUR
+
+`logo-ls`
+`visual-studio-code-bin`
+`betterdiscord-installer`
+`github-desktop`
+
+#### Pacman
+
+`ttf-font-awesome`
+
+for hyprland
+`sudo pacman -S xdg-desktop-portal-hyprland`
