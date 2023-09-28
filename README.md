@@ -51,6 +51,8 @@ for move folder use :
 #### Pacman
 
 `ttf-font-awesome`
+`obsidian`
+`easyeffects`
 
 for hyprland
 `sudo pacman -S xdg-desktop-portal-hyprland`

@@ -100,9 +100,8 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 
-alias neoconf="nvim /home/odin/.config/neofetch/config.conf"
+alias hyprconf="nvim .config/hypr/hyprland.conf"
 alias ls="logo-ls -A"
-alias code="com.visualstudio.code"
 alias zshconfig="sudo -E nvim ~/.zshrc"
 alias polybar-path="cd ~/.config/polybar/"
 alias polybar-conf="code ~/.config/polybar/config.ini"
