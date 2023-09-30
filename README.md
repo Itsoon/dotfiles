@@ -50,7 +50,6 @@ for move folder use :
 
 #### Pacman
 
-`ttf-font-awesome`
 `obsidian`
 `easyeffects`
 

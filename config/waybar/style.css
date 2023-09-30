@@ -1,0 +1,168 @@
+* {
+  border-radius: 0;
+  font-family: FontAwesome, "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 0;
+}
+
+window#waybar {
+  /* background: rgba(20, 20, 20, 0.443); */
+  background: rgba(28, 28, 28, 0.662);
+  color: #cdd6f4;
+  border: solid 3px #6200ff;
+  border-radius: 12px;
+}
+
+tooltip {
+  border: solid 3px #6200ff;
+  background: rgba(0, 0, 0, 0.605);
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: #cdd6f4;
+}
+#workspaces {
+  margin-left: 5px;
+}
+#workspaces button {
+  padding: 2px;
+  color: #558;
+  /* color: #313244; */
+  margin: 2px;
+  border-radius: 8px;
+}
+
+#workspaces button.active {
+  margin: 8px 0;
+  background: #cdd6f4;
+  color: #000;
+}
+
+#workspaces button.active:hover {
+  background: #cdd6f4;
+  color: #000;
+}
+
+#workspaces button.focused {
+  color: #cdd6f4;
+  background: #eba0ac;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  background: #a6e3a1;
+}
+
+#workspaces button:hover {
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#window,
+#custom-launch_rofi,
+#custom-lock_screen,
+#custom-power_btn,
+#custom-weather,
+#custom-media,
+#custom-wf-recorder,
+#custom-notification,
+#cpu,
+#disk,
+#memory,
+#battery,
+#pulseaudio,
+#tray,
+#temperature,
+#backlight {
+  padding: 0px 10px;
+  margin: 3px 0px;
+  margin-top: 3px;
+  border: 0px;
+  border-radius: 0px;
+}
+
+#clock {
+  /* background-color: red; */
+  margin: 0px 10px 0px 8px;
+  padding: 0px;
+}
+#network {
+  /* background-color: blue; */
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+}
+/* with rounded left */
+/* #tray, */
+/* #battery,
+#custom-launch_rofi,
+#custom-media,
+#pulseaudio:not(.microphone),
+#cpu {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+} */
+
+/* with roudned right */
+/* #custom-power_btn,
+#workspaces,
+#tray,
+#clock,
+#custom-media {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+} */
+
+/* Start overrides */
+
+#workspaces {
+  padding-right: 0px;
+  padding-left: 3px;
+}
+
+#battery.warning {
+  color: rgba(255, 85, 0, 0.382);
+}
+
+#battery.critical,
+#temperature.critical {
+  animation: error-animation 1s steps(5, start) infinite;
+  -webkit-animation: error-animation 1s steps(5, start) infinite;
+}
+
+#battery.plugged,
+#battery.charging {
+  color: #00a000;
+  animation: none;
+}
+
+#custom-wf-recorder {
+  color: red;
+}
+
+#custom-weather {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#custom-launch_rofi {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+@keyframes error-animation {
+  to {
+    color: #ffffff;
+    background-color: red;
+  }
+}
+@keyframes warning-animation {
+  to {
+    color: #ffffff;
+    background-color: orange;
+  }
+}
