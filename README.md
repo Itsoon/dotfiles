@@ -50,6 +50,7 @@ for move folder use :
 
 #### Pacman
 
+`feh`
 `obsidian`
 `easyeffects`
 
