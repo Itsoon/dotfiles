@@ -5,9 +5,7 @@
   font-size: 16px;
   min-height: 0;
 }
-
 window#waybar {
-  /* background: rgba(20, 20, 20, 0.443); */
   background: rgba(28, 28, 28, 0.662);
   color: #cdd6f4;
   border: solid 3px #6200ff;
@@ -29,7 +27,6 @@ tooltip label {
 #workspaces button {
   padding: 2px;
   color: #558;
-  /* color: #313244; */
   margin: 2px;
   border-radius: 8px;
 }
@@ -84,35 +81,13 @@ tooltip label {
 }
 
 #clock {
-  /* background-color: red; */
   margin: 0px 10px 0px 8px;
   padding: 0px;
 }
 #network {
-  /* background-color: blue; */
   padding: 0px;
   margin: 0px 0px 0px 10px;
 }
-/* with rounded left */
-/* #tray, */
-/* #battery,
-#custom-launch_rofi,
-#custom-media,
-#pulseaudio:not(.microphone),
-#cpu {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-} */
-
-/* with roudned right */
-/* #custom-power_btn,
-#workspaces,
-#tray,
-#clock,
-#custom-media {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-} */
 
 /* Start overrides */
 
@@ -139,13 +114,6 @@ tooltip label {
 
 #custom-wf-recorder {
   color: red;
-}
-
-#custom-weather {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 #custom-launch_rofi {
