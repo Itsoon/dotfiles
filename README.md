@@ -47,6 +47,7 @@ for move folder use :
 `visual-studio-code-bin`
 `betterdiscord-installer`
 `github-desktop`
+`rocm-openCL` amd gpu lib for davinci resolve
 
 #### Pacman
 
