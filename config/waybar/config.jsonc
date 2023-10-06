@@ -24,11 +24,11 @@
     // "cpu",
     // "memory",
     // "temperature",
-    "backlight",
-    "battery",
-    "pulseaudio",
     // "bluetooth",
     // "tray",
+    "pulseaudio",
+    "backlight",
+    "battery",
     "network",
     "clock"
   ],
@@ -126,7 +126,7 @@
     "timezone": "Europe/Paris",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}",
-    "format": "{: %m/%d %H:%M}"
+    "format": "{:%H:%M}"
   },
   "cpu": {
     "format": "{usage}% ",
