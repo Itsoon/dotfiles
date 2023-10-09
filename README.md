@@ -47,8 +47,11 @@ for move folder use :
 `visual-studio-code-bin`
 `betterdiscord-installer`
 `github-desktop`
+`swaylock-effects`
+`spotify`
+`mpv`
 
-`log4cxx amdgpu-pro-oglp amdgpu-pro-libgl libxcrypt-compat amdgpu-pro-installer rocm-openCL` amd gpu lib for davinci resolve
+`log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL` amd gpu lib for davinci resolve
 
 #### Pacman
 
@@ -58,3 +61,5 @@ for move folder use :
 
 for hyprland
 `sudo pacman -S xdg-desktop-portal-hyprland`
+
+// amberol

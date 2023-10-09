@@ -86,11 +86,6 @@ notify_view() {
 	fi
 }
 
-# Copy screenshot to clipboard
-copy_shot () {
-	tee "$file" | xclip -selection clipboard -t image/png
-}
-
 # countdown
 countdown () {
 	for sec in `seq $1 -1 1`; do
@@ -101,29 +96,29 @@ countdown () {
 
 # take shots
 shotnow () {
-	cd ${dir} && sleep 0.5 && maim -u -f png | copy_shot
+	cd ${dir} && sleep 0.5 && hyprshot -m output --clipboard-only | copy_shot
 	notify_view
 }
 
 shot5 () {
 	countdown '5'
-	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
+	sleep 1 && cd ${dir} && hyprshot -m output --clipboard-only | copy_shot
 	notify_view
 }
 
 shot10 () {
 	countdown '10'
-	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
+	sleep 1 && cd ${dir} && hyprshot -m output --clipboard-only | copy_shot
 	notify_view
 }
 
 shotwin () {
-	cd ${dir} && maim -u -f png -i `xdotool getactivewindow` | copy_shot
+	cd ${dir} && hyprshot -m window --clipboard-only | copy_shot
 	notify_view
 }
 
 shotarea () {
-	cd ${dir} && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | copy_shot
+	cd ${dir} && hyprshot -m region --clipboard-only | copy_shot
 	notify_view
 }
 
