@@ -50,6 +50,7 @@ for move folder use :
 `swaylock-effects`
 `spotify`
 `mpv`
+`xfce4-notifyd` for conf `xfce4-notifyd-config`
 
 `log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL` amd gpu lib for davinci resolve
 
