@@ -64,3 +64,4 @@ for hyprland
 `sudo pacman -S xdg-desktop-portal-hyprland`
 
 // amberol
+`alsa-utils`
