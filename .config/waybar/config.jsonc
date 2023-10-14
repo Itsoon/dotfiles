@@ -2,7 +2,7 @@
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   // "height": 30, // Waybar height (to be removed for auto height)
-  "width": 1560, // Waybar width
+  // "width": 1560, // Waybar width
   //   "spacing": 4, // Gaps between modules (4px)
 
   "layer": "top",
@@ -18,17 +18,17 @@
     "hyprland/window",
     "custom/media"
   ],
-  "modules-center": [],
+  "modules-center": ["mpd"],
   "modules-right": [
     "mpd",
     // "cpu",
     // "memory",
     // "temperature",
-    // "bluetooth",
     // "tray",
     "pulseaudio",
     "backlight",
     "battery",
+    "bluetooth",
     "network",
     "clock"
   ],
@@ -40,6 +40,8 @@
   },
   "bluetooth": {
     "format": " {status}",
+    "format-on": "  ",
+    "format-off": "  ",
     "format-connected": " {device_alias}",
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device

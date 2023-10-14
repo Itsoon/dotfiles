@@ -52,7 +52,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       600px;
+    width:                       650px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -84,7 +84,6 @@ mainbox {
     padding:                     15px;
     border:                      2px;
     border-radius:               10px;
-    border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
 }
@@ -194,7 +193,6 @@ element {
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            var(normal-background);
     text-color:                  var(normal-foreground);
 }
 element normal.urgent {
@@ -218,7 +216,6 @@ element selected.active {
     text-color:                  var(selected-active-foreground);
 }
 element alternate.normal {
-    background-color:            var(alternate-normal-background);
     text-color:                  var(alternate-normal-foreground);
 }
 element alternate.urgent {

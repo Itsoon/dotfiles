@@ -8,8 +8,8 @@
 window#waybar {
   background: rgba(28, 28, 28, 0.662);
   color: #cdd6f4;
-  border: solid 3px #6200ff;
-  border-radius: 12px;
+  /* border: solid 3px #6200ff; */
+  /* border-radius: 12px; */
 }
 
 tooltip {
@@ -53,7 +53,7 @@ tooltip label {
 }
 
 #workspaces button:hover {
-  background: #1e1e2e;
+  background: rgba(30, 30, 46, 0);
   color: #cdd6f4;
 }
 
