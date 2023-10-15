@@ -1,12 +1,13 @@
 # dotfile
 
-OS: Endeavouros & Arch linux (desktop computer)
+<center>
+<img src="https://img.shields.io/github/last-commit/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
+<img src="https://img.shields.io/github/repo-size/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
+<img src="https://img.shields.io/github/stars/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
+</center>
 
-Shell: zsh
-
-Desktop environment: Hyprland
-
-Terminal: kitty
+> [!IMPORTANT]  
+> Compatible with arch based distro laptop and desktop computers
 
 ### Features
 
@@ -18,17 +19,35 @@ Terminal: kitty
 - Print Screen button key binding to screen tools (screenshot, colorpicker)
 - Battery/Power status
 
+<details>
+<summary><h3>Preview Screenshots</h3></summary>
+
+![screenshot](/assets/screenshot.png)
+
+</details>
+
 ### Apps
 
-| image viewer      | [feh](https://wiki.archlinux.org/title/feh)                                                                     |
-| ----------------- | --------------------------------------------------------------------------------------------------------------- |
-| browser           | [brave](https://aur.archlinux.org/packages/brave-bin)                                                           |
-| code editor       | [visual studio code](https://aur.archlinux.org/packages/visual-studio-code-bin) & [nvchad](https://nvchad.com/) |
-| git GUI client    | [github desktop](https://aur.archlinux.org/packages/github-desktop-bin)                                         |
-| file manager      | [nemo](https://wiki.archlinux.org/title/Nemo) & [ranger](https://wiki.archlinux.org/title/ranger)               |
-| bluetooth manager | [bluetooth](https://wiki.archlinux.org/title/Blueman)                                                           |
-| volume control    | [pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/)                                         |
-| network manager   | [network manager GUI](https://archlinux.org/packages/?name=nm-connection-editor)                                |
+| browser        | [brave](https://aur.archlinux.org/packages/brave-bin) & [firefox](https://archlinux.org/packages/?name=firefox) |
+| -------------- | --------------------------------------------------------------------------------------------------------------- |
+| code editor    | [visual studio code](https://aur.archlinux.org/packages/visual-studio-code-bin) & [nvchad](https://nvchad.com/) |
+| file manager   | [nemo](https://github.com/linuxmint/nemo) & [ranger](https://github.com/ranger/ranger)                          |
+| writing app    | [obsidian](https://obsidian.md/)                                                                                |
+| messaging      | [discord](https://discord.com/) & [telegram](https://telegram.org/) & [signal](https://signal.org/)             |
+| image viewer   | [feh](https://wiki.archlinux.org/title/feh)                                                                     |
+| music player   | [spotify](https://aur.archlinux.org/packages/spotify) & [amberol](https://aur.archlinux.org/packages/amberol)   |
+| video player   | [mpv](https://archlinux.org/packages/?name=mpv)                                                                 |
+| video editor   | [davinci resolve](https://wiki.archlinux.org/title/DaVinci_Resolve)                                             |
+| photo editor   | [krita](https://krita.org/) & [GIMP](https://www.gimp.org/) & [inkscape](https://inkscape.org/)                 |
+| git GUI client | [github desktop](https://desktop.github.com/)                                                                   |
+
+#### AUR
+
+`brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git`
+
+#### Pacman
+
+`feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop`
 
 #### Discord
 
@@ -43,9 +62,33 @@ Terminal: kitty
 
 - [spotify tui](https://github.com/Rigellute/spotify-tui)
 
-### Preview
+#### Davinci Resolve - amd gpu
 
-![screenshot](/assets/screenshot.png)
+1. Install the version you wish :
+
+free : `davinci-resolve` `davinci-resolve-beta`
+
+premium : `davinci-resolve-studio` `davinci-resolve-studio-beta`
+
+2. Install libs
+
+`log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL`
+
+### Settings
+
+| bluetooth manager    | [blueman](https://wiki.archlinux.org/title/Blueman)                              |
+| -------------------- | -------------------------------------------------------------------------------- |
+| network manager      | [network manager GUI](https://archlinux.org/packages/?name=nm-connection-editor) |
+| volume control       | [pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/)          |
+| GTK3 settings editor | [nwg look](https://aur.archlinux.org/packages/nwg-look)                          |
+
+#### AUR
+
+`nwg-look`
+
+#### Pacman
+
+`nm-connection-editor blueman pavucontrol`
 
 ### How to install
 
@@ -53,31 +96,24 @@ Terminal: kitty
 
 #### AUR
 
-`logo-ls swaylock-effects spotify mpv xfce4-notifyd`
+`logo-ls swaylock-effects xfce4-notifyd`
 
 to configure xfce ==> `xfce4-notifyd-config`
 
-`log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL` amd gpu lib for davinci resolve
-
 #### Pacman
 
-`feh`
-`obsidian`
-`easyeffects`
-`alsa-utils`
-
-for hyprland
-`sudo pacman -S xdg-desktop-portal-hyprland`
+`easyeffects alsa-utils xdg-desktop-portal-hyprland`
 
 - Set cursor with :
   `hyprctl setcursor WhiteSur Cursors 24`
 
-Change `oh-my-zsh folder` to `.oh-my-zsh`
-// amberol
-https://rgbcolorpicker.com/
+<details>
+<summary><h3>Useful links</h3></summary>
+[color picker](https://rgbcolorpicker.com/)
+</details>
 
 <details>
-<summary>.kde config</summary>
+<summary>kde rice</summary>
 
 ### Icons :
 
@@ -87,18 +123,13 @@ https://rgbcolorpicker.com/
 
 `/home/user/.local/share/color-schemes/`
 
-### Black box
-
-flatpak :
-`/home/user/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/`
-
 ### Konsole
 
 `/home/user/.local/share/konsole/`
 
 ### Gtk Application Style
 
-`Skeuos-White-Dark`
+`WhiteSur Dark`
 
 ### Sddm
 
