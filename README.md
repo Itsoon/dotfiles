@@ -107,11 +107,6 @@ to configure xfce ==> `xfce4-notifyd-config`
 - Set cursor with :
   `hyprctl setcursor WhiteSur Cursors 24`
 
-<details>
-<summary><h3>Useful links</h3></summary>
-[color picker](https://rgbcolorpicker.com/)
-</details>
-
 ### Wallpaper Source
 
 ![kusunoki-masashige](/wallpaper/kusunoki-masashige-monochrome.jpg)
@@ -119,6 +114,11 @@ to configure xfce ==> `xfce4-notifyd-config`
 
 ![Kusunoki_masashige](https://upload.wikimedia.org/wikipedia/commons/5/51/Kusunoki_masashige.jpg)
 ![Thomas_The_Course_of_Empire_Destruction](https://upload.wikimedia.org/wikipedia/commons/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg)
+
+<details>
+<summary><h3>Useful links</h3></summary>
+[color picker](https://rgbcolorpicker.com/)
+</details>
 
 <details>
 <summary>kde rice</summary>
