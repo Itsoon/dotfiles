@@ -1,10 +1,10 @@
 # dotfile
 
-<center>
+<div align="center">
 <img src="https://img.shields.io/github/last-commit/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
 <img src="https://img.shields.io/github/repo-size/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
 <img src="https://img.shields.io/github/stars/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
-</center>
+</div>
 
 > [!IMPORTANT]  
 > Compatible with arch based distro laptop and desktop computers
