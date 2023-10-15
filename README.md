@@ -45,6 +45,8 @@ Terminal: kitty
 
 ### Preview
 
+![screenshot](/assets/screenshot.png)
+
 ### How to install
 
 #### Install dependencies
