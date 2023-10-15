@@ -6,7 +6,7 @@
 ## Applets : Screenshot
 
 # Import Current Theme
-theme="$HOME/.config/hypr/useful-tools/style.rasi"
+theme="$HOME/.config/hypr/screen-tools/style.rasi"
 # theme="$HOME/.config/rofi/applets/type-3/style-2.rasi"
 
 # Theme Elements
@@ -83,23 +83,23 @@ countdown () {
 
 # take shots
 shotnow () {
-	cd ${dir} && sleep 0.5 && hyprshot -c -m output -o $HOME/Pictures/Screenshots | copy_shot
+	cd ${dir} && sleep 0.5 && hyprshot -c -m output -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
 shot5 () {
 	countdown '5'
-	sleep 1 && cd ${dir} && hyprshot -c -m output -o $HOME/Pictures/Screenshots | copy_shot
+	sleep 1 && cd ${dir} && hyprshot -c -m output -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
 shotwin () {
-	cd ${dir} && hyprshot -m window -o $HOME/Pictures/Screenshots | copy_shot
+	cd ${dir} && hyprshot -m window -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
 shotarea () {
-	cd ${dir} && hyprshot -m region -o $HOME/Pictures/Screenshots | copy_shot
+	cd ${dir} && hyprshot -m region -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 

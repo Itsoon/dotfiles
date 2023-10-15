@@ -49,7 +49,8 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": ".config/waybar/scripts/toggle_bluetooth.sh"
+    "on-click": ".config/waybar/scripts/toggle_bluetooth.sh",
+    "on-double-click": "blueman-manager"
   },
   "wlr/workspaces": {
     "disable-scroll": false,
@@ -174,18 +175,21 @@
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "on-click": ".config/waybar/scripts/toggle_wifi.sh",
+    "on-double-click": "nm-connection-editor"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    // "format": "{icon} {volume}% | {format_source}",
-    "format": "{icon} {volume}%",
+    "format": "{icon} {volume}%  {format_source}",
+    // "format": "{icon} {volume}%",
+    "format-alt": "{icon} {volume}% {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon}  {format_source}",
-    // "format-muted": " {volume}% | {format_source}",
+    "format-muted": " {volume}% | {format_source}",
     "format-muted": " {volume}%",
-    // "format-source": "",
-    // "format-source-muted": "",
+    "format-source": "",
+    "format-source-muted": "",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
