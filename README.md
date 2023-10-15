@@ -110,6 +110,7 @@ to configure xfce ==> `xfce4-notifyd-config`
 ### Wallpaper Source
 
 ![kusunoki-masashige](/wallpaper/kusunoki-masashige-monochrome.jpg)
+![kusunoki-masashige](/wallpaper/kusunoki-masashige.jpg)
 [flickr](https://www.flickr.com/photos/epler/527822294/in/photostream/) [Kusunoki_masashige](https://commons.m.wikimedia.org/wiki/File:Kusunoki_masashige.jpg) + [The_Course_of_Empire_Destruction](https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg)
 
 ![Kusunoki_masashige](https://upload.wikimedia.org/wikipedia/commons/5/51/Kusunoki_masashige.jpg)
