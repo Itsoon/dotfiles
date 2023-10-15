@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export EDITOR="nvim"
+export VISUAL="code"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,9 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 
 alias hyprconf="nvim .config/hypr/hyprland.conf"
+alias neoconf="nvim /home/odin/.config/neofetch/config.conf"
 alias ls="logo-ls -A"
 alias zshconfig="sudo -E nvim ~/.zshrc"
-alias polybar-path="cd ~/.config/polybar/"
 alias polybar-conf="code ~/.config/polybar/config.ini"
 # alias ohmyzsh = "~/.oh-my-zsh/.oh-my-zsh.sh"
 
