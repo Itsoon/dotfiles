@@ -19,14 +19,15 @@
 - Print Screen button key binding to screen tools (screenshot, colorpicker)
 - Battery/Power status
 
-<details open>
+<details>
 <summary><h3>Preview Screenshots</h3></summary>
 
 ![screenshot](/assets/screenshot.png)
 
 </details>
 
-### Apps
+<details open>
+<summary><h3>Apps</h3></summary>
 
 | browser        | [brave](https://aur.archlinux.org/packages/brave-bin) & [firefox](https://archlinux.org/packages/?name=firefox) |
 | -------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -43,11 +44,15 @@
 
 #### AUR
 
-`brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git`
+```bash
+brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git
+```
 
 #### Pacman
 
-`feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop`
+```bash
+feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop
+```
 
 #### Discord
 
@@ -66,48 +71,125 @@
 
 1. Install the version you wish :
 
-free : `davinci-resolve` `davinci-resolve-beta`
+free : `bash davinci-resolve` `bash davinci-resolve-beta`
 
-premium : `davinci-resolve-studio` `davinci-resolve-studio-beta`
+premium : `bash davinci-resolve-studio` `bash davinci-resolve-studio-beta`
 
 2. Install libs
 
-`log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL`
+```bash
+log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL
+```
 
-### Settings
+---
 
-| bluetooth manager    | [blueman](https://wiki.archlinux.org/title/Blueman)                              |
-| -------------------- | -------------------------------------------------------------------------------- |
-| network manager      | [network manager GUI](https://archlinux.org/packages/?name=nm-connection-editor) |
-| volume control       | [pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/)          |
-| GTK3 settings editor | [nwg look](https://aur.archlinux.org/packages/nwg-look)                          |
+</details>
+
+<details open>
+<summary><h3>Settings</h3></summary>
+
+| bluetooth manager   | [blueman](https://wiki.archlinux.org/title/Blueman)                              |
+| ------------------- | -------------------------------------------------------------------------------- |
+| network manager     | [network manager GUI](https://archlinux.org/packages/?name=nm-connection-editor) |
+| volume control      | [pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/)          |
+| audio effects       | [easy effects](https://archlinux.org/packages/extra/x86_64/easyeffects/)         |
+| GTK settings editor | [nwg look](https://aur.archlinux.org/packages/nwg-look)                          |
 
 #### AUR
 
-`nwg-look`
+```bash
+nwg-look
+```
 
 #### Pacman
 
-`nm-connection-editor blueman pavucontrol`
+```bash
+nm-connection-editor blueman pavucontrol easyeffects
+```
 
-### How to install
+---
+
+</details>
+
+<details open>
+<summary><h3>How to install</h3></summary>
 
 #### Install dependencies
 
+`hyprland` : wayland compositor
+
+`sddm` : graphical login program
+
+`swaylock-effects` : lock screen
+
+`hyprpaper` : wallpaper
+
+`hyprshot` : screenshots
+
+`hyprpicker` : wayland color picker
+
+`dunst` : notifications
+
+`rofi` : app launcher & powermenu
+
+`zsh` : shell
+
+`playerctl` : mpris media player command-line controller
+
+`brightnessctl` : backlight
+
 #### AUR
 
-`logo-ls swaylock-effects xfce4-notifyd`
-
-to configure xfce ==> `xfce4-notifyd-config`
+```bash
+logo-ls swaylock-effects hyprpicker
+```
 
 #### Pacman
 
-`easyeffects alsa-utils xdg-desktop-portal-hyprland`
+```bash
+hyprland hyprpaper sddm dunst rofi zsh playerctl brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland
+```
+
+#### Fonts
+
+```bash
+ttf-jetbrains-mono-nerd otf-firamono-nerd ttf-fantasque-nerd ttf-font-awesome ttf-iosevka-nerd ttf-nerd-fonts-symbols-common
+```
+
+---
+
+</details>
+
+<details open>
+<summary><h3>Post installation</h3></summary>
+
+#### Sddm
+
+path `/usr/share/sddm/themes/`
+
+for copy folder use :
+
+```bash
+cp -r /path/to/file/source /path/to/file/destination
+```
+
+#### Cursor
 
 - Set cursor with :
   `hyprctl setcursor WhiteSur Cursors 24`
 
-### Wallpaper Source
+#### Zsh
+
+Make it your default shell :
+
+```bash
+chsh -s $(which zsh)
+```
+
+</details>
+
+<details>
+<summary><h3>Wallpaper Source</h3></summary>
 
 ![kusunoki-masashige](/wallpaper/kusunoki-masashige-monochrome.jpg)
 ![kusunoki-masashige](/wallpaper/kusunoki-masashige.jpg)
@@ -116,44 +198,9 @@ to configure xfce ==> `xfce4-notifyd-config`
 ![Kusunoki_masashige](https://upload.wikimedia.org/wikipedia/commons/5/51/Kusunoki_masashige.jpg)
 ![Thomas_The_Course_of_Empire_Destruction](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg/1280px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg)
 
-<details>
-<summary><h3>Useful links</h3></summary>
-[color picker](https://rgbcolorpicker.com/)
 </details>
 
 <details>
-<summary>kde rice</summary>
-
-### Icons :
-
-`/home/user/.local/share/icons/`
-
-### Color scheme :
-
-`/home/user/.local/share/color-schemes/`
-
-### Konsole
-
-`/home/user/.local/share/konsole/`
-
-### Gtk Application Style
-
-`WhiteSur Dark`
-
-### Sddm
-
-`/usr/share/sddm/themes/`
-
-for move folder use :
-
-`mv /path/to/file/source /path/to/file/destination`
-
-### Splash sreen :
-
-`/home/odin/.local/share/plasma/look-and-feel/`
-
-### Picom
-
-`/etc/xdg/`
-
+<summary><h3>Useful links</h3></summary>
+[color picker](https://rgbcolorpicker.com/)
 </details>

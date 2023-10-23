@@ -103,13 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 
 alias hyprconf="nvim .config/hypr/hyprland.conf"
-alias neoconf="nvim /home/odin/.config/neofetch/config.conf"
 alias ls="logo-ls -A"
-alias zshconfig="sudo -E nvim ~/.zshrc"
-alias polybar-conf="code ~/.config/polybar/config.ini"
-# alias ohmyzsh = "~/.oh-my-zsh/.oh-my-zsh.sh"
-
-# Spicetify
-export PATH=$PATH:/home/odin/.spicetify
+alias zshconf="sudo -E nvim ~/.zshrc"
 
 # Terminal run command
