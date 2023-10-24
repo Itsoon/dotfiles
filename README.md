@@ -54,6 +54,16 @@ brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git
 feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop
 ```
 
+#### Visual Studio Code
+
+Copy [settings.json](/visual%20studio%20code/settings.json) to this path
+
+```bash
+/home/odin/.config/Code/User/
+```
+
+###### look at [#commands](#Commands) for help
+
 #### Discord
 
 - [better discord](https://aur.archlinux.org/packages/betterdiscord-installer)
@@ -71,9 +81,9 @@ feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-deskto
 
 1. Install the version you wish :
 
-free : `bash davinci-resolve` `bash davinci-resolve-beta`
+free : `bash davinci-resolve` or `bash davinci-resolve-beta`
 
-premium : `bash davinci-resolve-studio` `bash davinci-resolve-studio-beta`
+premium : `bash davinci-resolve-studio` or `bash davinci-resolve-studio-beta`
 
 2. Install libs
 
@@ -86,7 +96,7 @@ log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL
 </details>
 
 <details open>
-<summary><h3>Settings</h3></summary>
+<summary><h3>Settings apps</h3></summary>
 
 | bluetooth manager   | [blueman](https://wiki.archlinux.org/title/Blueman)                              |
 | ------------------- | -------------------------------------------------------------------------------- |
@@ -132,6 +142,8 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 `rofi` : app launcher & powermenu
 
+`waybar` : customizable wayland bar
+
 `zsh` : shell
 
 `playerctl` : mpris media player command-line controller
@@ -147,7 +159,7 @@ logo-ls swaylock-effects hyprpicker
 #### Pacman
 
 ```bash
-hyprland hyprpaper sddm dunst rofi zsh playerctl brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland
+hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland
 ```
 
 #### Fonts
@@ -165,18 +177,21 @@ ttf-jetbrains-mono-nerd otf-firamono-nerd ttf-fantasque-nerd ttf-font-awesome tt
 
 #### Sddm
 
-path `/usr/share/sddm/themes/`
-
-for copy folder use :
+Copy [sugar-candy](/sddm/sugar-candy/) to this path :
 
 ```bash
-cp -r /path/to/file/source /path/to/file/destination
+/usr/share/sddm/themes/
 ```
+
+###### look at [#commands](#Commands) for help
 
 #### Cursor
 
-- Set cursor with :
-  `hyprctl setcursor WhiteSur Cursors 24`
+Set cursor with :
+
+```bash
+hyprctl setcursor WhiteSur Cursors 24
+```
 
 #### Zsh
 
@@ -184,6 +199,33 @@ Make it your default shell :
 
 ```bash
 chsh -s $(which zsh)
+```
+
+#### Dunst
+
+Copy [dunstrc](/dunst/dunstrc) to this path :
+
+```bash
+/etc/dunst/
+```
+
+###### look at [#commands](#Commands) for help
+
+</details>
+
+<details>
+<summary><h3>Commands</h3></summary>
+
+Copy :
+
+```bash
+cp -r /path/to/file/source /path/to/file/destination
+```
+
+Move :
+
+```bash
+mv /path/to/file/source /path/to/file/destination
 ```
 
 </details>
