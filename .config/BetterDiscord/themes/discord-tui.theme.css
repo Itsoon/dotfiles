@@ -1,10 +1,10 @@
 /**
-    * @name GitHub Dark
+    * @name Discord-tui
     * @version 1.0.0
-    * @description A theme based off of the GitHub Dark theme.
-    * @author Sango
-    * @source https://github.com/moistp1ckle/GitHub_Dark
-    * @website https://github.com/moistp1ckle
+    * @description based off of the GitHub Dark theme.
+    * @author Itsoon
+    * @source https://github.com/Itsoon-xyz/discord_tui
+    * @website https://github.com/Itsoon-xyz/
 **/
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Cousine:wght@400;700&family=Cutive+Mono&family=DM+Mono:wght@300;400;500&family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Nanum+Gothic+Coding:wght@400;700&family=PT+Mono&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Share+Tech+Mono&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Ubuntu+Mono:wght@400;700&family=VT323&display=swap");
 :root {
@@ -607,6 +607,7 @@
   width: 0px;
 }
 
+.title-5wgnIa,
 .container-2cd8Mz,
 .container-1NXEtd,
 .chat-2ZfjoI,
@@ -615,6 +616,8 @@
 .scroller-WSmht3 {
   border: solid 1px rgb(68, 64, 64);
 }
+
+.title-5wgnIa:hover,
 .container-2cd8Mz:hover,
 .container-1NXEtd:hover,
 .chat-2ZfjoI:hover,
@@ -633,28 +636,12 @@
   border: solid 1px #1ed760;
 }
 
-.scroller-3X7KbA {
-  /* position: absolute; */
-  /* width: 100%; */
-  margin-top: 5.25em;
-  margin-bottom: 2em;
-}
-
 body {
   margin: 1em;
 }
 
 .searchBar-3TnChZ {
   display: none !important;
-}
-
-.sidebar-1tnWFu {
-  margin: 0 1em 1em 1em;
-  height: calc(100% - 2em);
-}
-
-.panels-3wFtMD {
-  margin: 1em 0 0 0;
 }
 
 a.anchor-1X4H4q[href="https://support.discord.com"]
@@ -678,37 +665,6 @@ a.anchor-1X4H4q[href="https://support.discord.com"]
   border: solid 1px #1ed760;
 }
 
-.guildSeparator-a4uisj,
-.listItem-3SmSlK .pill-L_aLMQ {
-  display: none;
-}
-
-.listItem-3SmSlK {
-  /* background-color: red; */
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.listItem-3SmSlK:not(:last-child) {
-  margin-bottom: 0px;
-}
-
-/* .wrapper-3kah-n.selected-1Drb7Z .icon-3AqZ2e {
-} */
-.wrapper-3kah-n .icon-3AqZ2e {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-/* .icon-3AqZ2e {
-  display: none;
-} */
-
-div.pill-2RsI5Q.wrapper-z5ab_q[aria-hidden="true"] > span.item-2LIpTv {
-  display: none;
-}
-
 .container-2cd8Mz {
   margin: 0 2em 2em 0;
   width: 100%;
@@ -722,20 +678,107 @@ div.pill-2RsI5Q.wrapper-z5ab_q[aria-hidden="true"] > span.item-2LIpTv {
   margin: 0 0 1em 0;
 }
 
-.themedBackground-3uF0xW {
-  background-color: unset;
-  border: solid 1px rgb(68, 64, 64);
-  border-radius: 0;
-}
-
-.themedBackground-3uF0xW:hover {
-  border: solid 1px #1ed760;
-}
-
 .theme-dark .children-3xh0VB:after {
   display: none;
 }
 
 * {
   font-family: var(--app-font), sans-serif !important;
+}
+
+.bioTextArea-dDGOeC {
+  height: fit-content;
+}
+.theme-dark .form-3qe0Ni:before {
+  display: none;
+}
+/* ######################################################## */
+/* CHANEL ################################################# */
+/* ######################################################## */
+.panels-3wFtMD {
+  margin: 1em 0 0 0;
+}
+.sidebar-1tnWFu {
+  margin: 0 1em 1em 1em;
+  height: calc(100% - 2em);
+}
+/* ######################################################## */
+/* SERVER LIST ############################################ */
+/* ######################################################## */
+
+.guildSeparator-a4uisj,
+.listItem-3SmSlK .pill-L_aLMQ {
+  display: none;
+}
+div.pill-2RsI5Q.wrapper-z5ab_q[aria-hidden="true"] > span.item-2LIpTv {
+  display: none;
+}
+/* .icon-3AqZ2e {
+  display: none;
+} */
+.wrapper-3kah-n .icon-3AqZ2e {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.listItem-3SmSlK {
+  width: fit-content;
+  margin: 0 auto;
+}
+.listItem-3SmSlK:not(:last-child) {
+  margin-bottom: 0px;
+}
+.scroller-3X7KbA {
+  margin-top: 5.25em;
+  margin-bottom: 2em;
+}
+
+/* ######################################################## */
+/* BETTERDISCORD Notif #################################### */
+/* ######################################################## */
+
+#bd-notices {
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+/* ######################################################## */
+/* TOOLS BAR ############################################## */
+/* ######################################################## */
+
+.title-5wgnIa {
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+/* ######################################################## */
+/* MIDDLE PART ############################################ */
+/* ######################################################## */
+
+.scroller-kQBbkU {
+  border: solid 1px rgb(68, 64, 64);
+}
+
+.scroller-kQBbkU:hover {
+  border: solid 1px #1ed760;
+}
+.chat-9g_3Xj {
+  margin-right: 2em;
+}
+
+/* ######################################################## */
+/* INPUT ################################################## */
+/* ######################################################## */
+
+.themedBackground-3uF0xW {
+  background-color: unset;
+  border: solid 1px rgb(68, 64, 64);
+  border-radius: 0;
+  margin: 2em 0 2em 0;
+}
+
+.themedBackground-3uF0xW:hover {
+  border: solid 1px #1ed760;
+}
+.form-3qe0Ni {
+  padding: 0;
 }

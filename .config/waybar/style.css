@@ -9,11 +9,11 @@ window#waybar {
   background: rgba(28, 28, 28, 0.662);
   color: #cdd6f4;
   /* border: solid 3px #6200ff; */
-  /* border-radius: 12px; */
+  border-radius: 12px;
 }
 
 tooltip {
-  border: solid 3px #6200ff;
+  /* border: solid 3px #6200ff; */
   background: rgba(0, 0, 0, 0.605);
   border-radius: 10px;
 }
@@ -110,10 +110,6 @@ tooltip label {
 #battery.charging {
   color: #00a000;
   animation: none;
-}
-
-#custom-wf-recorder {
-  color: red;
 }
 
 #custom-launch_rofi {

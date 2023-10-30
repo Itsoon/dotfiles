@@ -228,6 +228,10 @@ Move :
 mv /path/to/file/source /path/to/file/destination
 ```
 
+```bash
+git clone -b <branchname> --single-branch <remote-repo-url>
+```
+
 </details>
 
 <details>
