@@ -8,13 +8,12 @@
 window#waybar {
   background: rgba(28, 28, 28, 0.662);
   color: #cdd6f4;
-  /* border: solid 3px #6200ff; */
   border-radius: 12px;
 }
 
 tooltip {
-  /* border: solid 3px #6200ff; */
   background: rgba(0, 0, 0, 0.605);
+  border: none;
   border-radius: 10px;
 }
 
@@ -25,14 +24,16 @@ tooltip label {
   margin-left: 5px;
 }
 #workspaces button {
-  padding: 2px;
-  color: #558;
-  margin: 2px;
+  border: none;
   border-radius: 8px;
+
+  padding: 2px 6px;
+  margin: 8px 2px;
+
+  color: #558;
 }
 
 #workspaces button.active {
-  margin: 8px 0;
   background: #cdd6f4;
   color: #000;
 }
