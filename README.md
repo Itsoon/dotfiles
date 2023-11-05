@@ -41,6 +41,7 @@
 | video editor   | [davinci resolve](https://wiki.archlinux.org/title/DaVinci_Resolve)                                             |
 | photo editor   | [krita](https://krita.org/) & [GIMP](https://www.gimp.org/) & [inkscape](https://inkscape.org/)                 |
 | git GUI client | [github desktop](https://desktop.github.com/)                                                                   |
+| process viewer | [bashtop](https://github.com/aristocratos/bashtop) & [htop](https://htop.dev/)                                  |
 
 #### AUR
 
@@ -51,7 +52,7 @@ brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git
 #### Pacman
 
 ```bash
-feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop
+feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop htop bashtop
 ```
 
 #### Visual Studio Code
@@ -185,6 +186,26 @@ Copy [sugar-candy](/sddm/sugar-candy/) to this path :
 
 ###### look at [#commands](#Commands) for help
 
+##### Modify sddm settings :
+
+```bash
+sudo nvim /usr/lib/sddm/sddm.conf.d/default.conf
+```
+
+edit section [Theme]
+
+for example :
+
+[Theme]
+
+Current=name_theme
+
+to list available themes :
+
+```bash
+ls /usr/share/sddm/themes/
+```
+
 #### Cursor
 
 Set cursor with :
@@ -227,6 +248,8 @@ Move :
 ```bash
 mv /path/to/file/source /path/to/file/destination
 ```
+
+Clone a specific branch :
 
 ```bash
 git clone -b <branchname> --single-branch <remote-repo-url>
