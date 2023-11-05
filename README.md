@@ -255,6 +255,18 @@ Clone a specific branch :
 git clone -b <branchname> --single-branch <remote-repo-url>
 ```
 
+Available fonts lists :
+
+```bash
+ls .local/share/fonts/
+```
+
+or
+
+```bash
+ls /usr/share/fonts/
+```
+
 </details>
 
 <details>
