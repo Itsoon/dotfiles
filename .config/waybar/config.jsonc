@@ -28,6 +28,7 @@
     // "memory",
     // "temperature",
     // "tray",
+    "idle_inhibitor",
     "pulseaudio",
     "backlight",
     "battery",
@@ -74,7 +75,7 @@
   },
   "hyprland/window": {
     "format": " {title}",
-    // "max-length": 15,
+    "max-length": 30,
     "rewrite": {
       "(.*) - zsh": "> [$1]",
       "(.*) - Brave": " Brave",
@@ -144,6 +145,13 @@
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", ""]
   },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " "
+    }
+  },
   "backlight": {
     // "device": "acpi_video1",
     "format": "{icon} {percent}%",
@@ -176,9 +184,9 @@
   },
   "pulseaudio": {
     "format": "{icon} {volume}%  {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}%  {format_source}",
     "format-bluetooth-muted": " {icon}  {format_source}",
-    "format-muted": " {volume}% | {format_source}",
+    "format-muted": " {volume}%  {format_source}",
     "format-source": " {volume}%",
     "format-source-muted": "",
     "format-icons": {
