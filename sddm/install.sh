@@ -4,7 +4,9 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 CD=$(pwd)
-dSource="${CD}/sugar-candy"
+dSource="${CD}/sugar-candy/"
+
+rm -r /usr/share/sddm/themes/sugar-candy/
 
 cp -r ${dSource} /usr/share/sddm/themes/
 

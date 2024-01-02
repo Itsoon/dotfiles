@@ -152,6 +152,7 @@ nm-connection-editor blueman pavucontrol easyeffects
 `brightnessctl` : backlight
 
 `swayosd` : volume - brightness
+
 `polkit-gnome` : polkit authentication agent
 
 #### AUR
@@ -239,7 +240,7 @@ Copy [dunstrc](/dunst/dunstrc) to this path :
 
 Run this [script](/grub/install.sh)
 
-After that add this line :
+Then add the following line :
 
 ```shell
 GRUB_THEME="/usr/share/grub/themes/Tela/theme.txt"
@@ -249,6 +250,14 @@ to
 
 ```shell
 /etc/default/grub
+```
+
+#### SwayOSD
+
+SwayOSD LibInput Backend :
+
+```shell
+sudo systemctl enable --now swayosd-libinput-backend.service
 ```
 
 </details>
@@ -287,6 +296,14 @@ ls /usr/share/fonts/
 ```
 
 </details>
+
+#### Other dependencies
+
+pacman
+
+```shell
+xorg-xhost
+```
 
 <details>
 <summary><h3>Wallpaper Source</h3></summary>

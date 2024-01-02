@@ -6,7 +6,7 @@
 ## Applets : Screenshot
 
 # Import Current Theme
-theme="$HOME/.config/hypr/screen-tools/style.rasi"
+theme="$HOME/.config/rofi/shared/style.rasi"
 # theme="$HOME/.config/rofi/applets/type-3/style-2.rasi"
 
 # Theme Elements
@@ -134,8 +134,10 @@ run_cmd() {
 		selected="$(confirm_exit)"
 		if [[ ! -z "$selected" ]]; then
 			if [[ "$selected" == "hex" ]]; then
+				sleep 0.5
 				selectedColor=$(hyprpicker -a -f hex)
 			elif [[ "$selected" == "rgb" ]]; then
+				sleep 0.5
 				selectedColor=$(hyprpicker -a -f rgb)
 			fi
 			dunstify -u low --replace=699 "Color Picker" "Copied to clipboard $selectedColor"
