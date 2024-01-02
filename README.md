@@ -151,16 +151,19 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 `brightnessctl` : backlight
 
+`swayosd` : volume - brightness
+`polkit-gnome` : polkit authentication agent
+
 #### AUR
 
 ```bash
-logo-ls swaylock-effects hyprpicker
+logo-ls swaylock-effects hyprpicker swayosd-git
 ```
 
 #### Pacman
 
 ```bash
-hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland
+hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome
 ```
 
 #### Fonts
@@ -232,6 +235,22 @@ Copy [dunstrc](/dunst/dunstrc) to this path :
 
 ###### look at [#commands](#Commands) for help
 
+#### Grub theme
+
+Run this [script](/grub/install.sh)
+
+After that add this line :
+
+```shell
+GRUB_THEME="/usr/share/grub/themes/Tela/theme.txt"
+```
+
+to
+
+```shell
+/etc/default/grub
+```
+
 </details>
 
 <details>
@@ -283,5 +302,9 @@ ls /usr/share/fonts/
 
 <details>
 <summary><h3>Useful links</h3></summary>
+
 [color picker](https://rgbcolorpicker.com/)
+
+[doc mankier](https://www.mankier.com/)
+
 </details>

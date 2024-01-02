@@ -18,7 +18,6 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "800",
   "workbench.colorTheme": "Bearded Theme Void",
-  "workbench.productIconTheme": "icons-carbon",
   "editor.codeLensFontFamily": "JetBrains Mono",
   "liveServer.settings.donotShowInfoMsg": true,
   "git.enableSmartCommit": true,
@@ -85,7 +84,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "icons",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
   "editor.fontSize": 15,
   "editor.cursorSmoothCaretAnimation": "on",
   "[jsonc]": {
@@ -93,5 +92,9 @@
   },
   "git.openRepositoryInParentFolders": "never",
   "window.zoomLevel": 1,
-  "window.titleBarStyle": "custom"
+  "window.titleBarStyle": "custom",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.productIconTheme": "icons-carbon"
 }
