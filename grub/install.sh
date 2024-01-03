@@ -1,5 +1,5 @@
 if [ "$EUID" -ne 0 ]; then
-    echo "Permission denied run as root"
+    echo "Permission denied. Please run as root."
     exit 1
 fi
 
