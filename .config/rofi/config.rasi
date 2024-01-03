@@ -29,7 +29,7 @@ configuration {
 /*****----- Global Properties -----*****/
 
 * {
-    primary-color:               #D3185F;
+    primary-color:               #BA6277;
     back-color:                  #121212;
     txt-color:                  #CECECE;
 }
@@ -161,7 +161,7 @@ listview {
 }
 scrollbar {
     handle-width:                5px;
-    handle-color:                #D3185F;
+    handle-color:                @primary-color;
     border-radius:               0px;
     background-color:            transparent;
 }
@@ -186,11 +186,11 @@ element normal.urgent {
 }
 element normal.active {
     background-color:            @back-color;
-    text-color:                  #D3185F;
+    text-color:                  @primary-color;
 }
 element selected.normal {
     background-color:            @back-color;
-    text-color:                  #D3185F;
+    text-color:                  @primary-color;
 }
 element selected.urgent {
     background-color:            @back-color;

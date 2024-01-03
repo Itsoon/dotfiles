@@ -17,7 +17,7 @@
   },
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "800",
-  "workbench.colorTheme": "Bearded Theme Void",
+  "workbench.colorTheme": "Bearded Theme Coffee Reversed",
   "editor.codeLensFontFamily": "JetBrains Mono",
   "liveServer.settings.donotShowInfoMsg": true,
   "git.enableSmartCommit": true,
@@ -91,7 +91,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.openRepositoryInParentFolders": "never",
-  "window.zoomLevel": 1,
   "window.titleBarStyle": "custom",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
