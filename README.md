@@ -41,7 +41,7 @@
 | video editor       | [davinci resolve](https://wiki.archlinux.org/title/DaVinci_Resolve)                                             |
 | photo editor       | [krita](https://krita.org/) & [GIMP](https://www.gimp.org/) & [inkscape](https://inkscape.org/)                 |
 | git GUI client     | [github desktop](https://desktop.github.com/)                                                                   |
-| process viewer     | [bashtop](https://github.com/aristocratos/bashtop) & [htop](https://htop.dev/)                                  |
+| process viewer     | [btop](https://github.com/aristocratos/btop) & [htop](https://htop.dev/)                                        |
 | pdf - ebook viewer | [zathura](https://wiki.archlinux.org/title/zathura)                                                             |
 
 #### AUR
@@ -53,7 +53,7 @@ brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git
 #### Pacman
 
 ```shell
-feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop htop bashtop zathura zathura-pdf-mupdf
+feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop htop btop zathura zathura-pdf-mupdf
 ```
 
 #### Visual Studio Code
@@ -227,6 +227,13 @@ Make it your default shell :
 chsh -s $(which zsh)
 ```
 
+[powerlevel10k](https://github.com/romkatv/powerlevel10k) :
+
+```shell
+yay -S --noconfirm zsh-theme-powerlevel10k-git
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
+
 #### Dunst
 
 Copy [dunstrc](/dunst/dunstrc) to this path :
@@ -275,7 +282,13 @@ cp -r /path/to/file/source /path/to/file/destination
 or rsync for copying with status information
 
 ```shell
-rsync -a --progress /path/to/file/source /path/to/file/destination
+rsync -r --progress /path/to/file/source /path/to/file/destination
+```
+
+or with progress bar status information
+
+```shell
+rsync -r --info=progress2 /path/to/file/source /path/to/file/destination
 ```
 
 Move :
