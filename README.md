@@ -29,37 +29,38 @@
 <details open>
 <summary><h3>Apps</h3></summary>
 
-| browser        | [brave](https://aur.archlinux.org/packages/brave-bin) & [firefox](https://archlinux.org/packages/?name=firefox) |
-| -------------- | --------------------------------------------------------------------------------------------------------------- |
-| code editor    | [visual studio code](https://aur.archlinux.org/packages/visual-studio-code-bin) & [nvchad](https://nvchad.com/) |
-| file manager   | [nemo](https://github.com/linuxmint/nemo) & [ranger](https://github.com/ranger/ranger)                          |
-| writing app    | [obsidian](https://obsidian.md/)                                                                                |
-| messaging      | [discord](https://discord.com/) & [telegram](https://telegram.org/) & [signal](https://signal.org/)             |
-| image viewer   | [feh](https://wiki.archlinux.org/title/feh)                                                                     |
-| music player   | [spotify](https://aur.archlinux.org/packages/spotify) & [amberol](https://aur.archlinux.org/packages/amberol)   |
-| video player   | [mpv](https://archlinux.org/packages/?name=mpv)                                                                 |
-| video editor   | [davinci resolve](https://wiki.archlinux.org/title/DaVinci_Resolve)                                             |
-| photo editor   | [krita](https://krita.org/) & [GIMP](https://www.gimp.org/) & [inkscape](https://inkscape.org/)                 |
-| git GUI client | [github desktop](https://desktop.github.com/)                                                                   |
-| process viewer | [bashtop](https://github.com/aristocratos/bashtop) & [htop](https://htop.dev/)                                  |
+| browser            | [brave](https://aur.archlinux.org/packages/brave-bin) & [firefox](https://archlinux.org/packages/?name=firefox) |
+| ------------------ | --------------------------------------------------------------------------------------------------------------- |
+| code editor        | [visual studio code](https://aur.archlinux.org/packages/visual-studio-code-bin) & [nvchad](https://nvchad.com/) |
+| file manager       | [nemo](https://github.com/linuxmint/nemo) & [ranger](https://github.com/ranger/ranger)                          |
+| writing app        | [obsidian](https://obsidian.md/)                                                                                |
+| messaging          | [discord](https://discord.com/) & [telegram](https://telegram.org/) & [signal](https://signal.org/)             |
+| image viewer       | [feh](https://wiki.archlinux.org/title/feh)                                                                     |
+| music player       | [spotify](https://aur.archlinux.org/packages/spotify) & [amberol](https://aur.archlinux.org/packages/amberol)   |
+| video player       | [mpv](https://archlinux.org/packages/?name=mpv)                                                                 |
+| video editor       | [davinci resolve](https://wiki.archlinux.org/title/DaVinci_Resolve)                                             |
+| photo editor       | [krita](https://krita.org/) & [GIMP](https://www.gimp.org/) & [inkscape](https://inkscape.org/)                 |
+| git GUI client     | [github desktop](https://desktop.github.com/)                                                                   |
+| process viewer     | [bashtop](https://github.com/aristocratos/bashtop) & [htop](https://htop.dev/)                                  |
+| pdf - ebook viewer | [zathura](https://wiki.archlinux.org/title/zathura)                                                             |
 
 #### AUR
 
-```bash
+```shell
 brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git
 ```
 
 #### Pacman
 
-```bash
-feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop htop bashtop
+```shell
+feh firefox mpv nemo ranger krita gimp inkscape obsidian discord telegram-desktop signal-desktop htop bashtop zathura zathura-pdf-mupdf
 ```
 
 #### Visual Studio Code
 
 Copy [settings.json](/visual%20studio%20code/settings.json) to this path
 
-```bash
+```shell
 /home/odin/.config/Code/User/
 ```
 
@@ -88,7 +89,7 @@ premium : `bash davinci-resolve-studio` or `bash davinci-resolve-studio-beta`
 
 2. Install libs
 
-```bash
+```shell
 log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL
 ```
 
@@ -108,13 +109,13 @@ log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL
 
 #### AUR
 
-```bash
+```shell
 nwg-look
 ```
 
 #### Pacman
 
-```bash
+```shell
 nm-connection-editor blueman pavucontrol easyeffects
 ```
 
@@ -157,19 +158,19 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 #### AUR
 
-```bash
+```shell
 logo-ls swaylock-effects hyprpicker swayosd-git
 ```
 
 #### Pacman
 
-```bash
+```shell
 hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome
 ```
 
 #### Fonts
 
-```bash
+```shell
 ttf-jetbrains-mono-nerd otf-firamono-nerd ttf-fantasque-nerd ttf-font-awesome ttf-iosevka-nerd ttf-nerd-fonts-symbols-common
 ```
 
@@ -184,7 +185,7 @@ ttf-jetbrains-mono-nerd otf-firamono-nerd ttf-fantasque-nerd ttf-font-awesome tt
 
 Copy [sugar-candy](/sddm/sugar-candy/) to this path :
 
-```bash
+```shell
 /usr/share/sddm/themes/
 ```
 
@@ -192,7 +193,7 @@ Copy [sugar-candy](/sddm/sugar-candy/) to this path :
 
 ##### Modify sddm settings :
 
-```bash
+```shell
 sudo nvim /usr/lib/sddm/sddm.conf.d/default.conf
 ```
 
@@ -206,7 +207,7 @@ Current=name_theme
 
 to list available themes :
 
-```bash
+```shell
 ls /usr/share/sddm/themes/
 ```
 
@@ -214,7 +215,7 @@ ls /usr/share/sddm/themes/
 
 Set cursor with :
 
-```bash
+```shell
 hyprctl setcursor WhiteSur Cursors 24
 ```
 
@@ -222,7 +223,7 @@ hyprctl setcursor WhiteSur Cursors 24
 
 Make it your default shell :
 
-```bash
+```shell
 chsh -s $(which zsh)
 ```
 
@@ -230,7 +231,7 @@ chsh -s $(which zsh)
 
 Copy [dunstrc](/dunst/dunstrc) to this path :
 
-```bash
+```shell
 /etc/dunst/
 ```
 
@@ -267,31 +268,37 @@ sudo systemctl enable --now swayosd-libinput-backend.service
 
 Copy :
 
-```bash
+```shell
 cp -r /path/to/file/source /path/to/file/destination
+```
+
+or rsync for copying with status information
+
+```shell
+rsync -a --progress /path/to/file/source /path/to/file/destination
 ```
 
 Move :
 
-```bash
+```shell
 mv /path/to/file/source /path/to/file/destination
 ```
 
 Clone a specific branch :
 
-```bash
+```shell
 git clone -b <branchname> --single-branch <remote-repo-url>
 ```
 
 Available fonts lists :
 
-```bash
+```shell
 ls .local/share/fonts/
 ```
 
 or
 
-```bash
+```shell
 ls /usr/share/fonts/
 ```
 
