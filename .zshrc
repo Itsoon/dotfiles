@@ -109,6 +109,9 @@ alias hyprconf="nvim .config/hypr/hyprland.conf"
 alias ls="logo-ls -A"
 alias zshconf="sudo -E nvim ~/.zshrc"
 
+ export VISUAL=nvim;
+ export EDITOR=code;
+
 # Terminal run command
 
 

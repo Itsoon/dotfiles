@@ -6,7 +6,7 @@ fi
 CD=$(pwd)
 dSource="${CD}/sugar-candy/"
 
-rm -r /usr/share/sddm/themes/sugar-candy/
+rm -rf /usr/share/sddm/themes/sugar-candy/
 
 cp -r ${dSource} /usr/share/sddm/themes/
 

@@ -6,7 +6,7 @@ fi
 CD=$(pwd)
 dSource="${CD}/Tela"
 
-rm -r /usr/share/grub/themes/Tela/
+rm -rf /usr/share/grub/themes/Tela/
 
 cp -r ${dSource} /usr/share/grub/themes/
 cp -r ${dSource} /boot/grub/themes/

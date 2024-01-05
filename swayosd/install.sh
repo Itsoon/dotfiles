@@ -6,7 +6,7 @@ fi
 CD=$(pwd)
 dSource="${CD}/style.css"
 
-sudo rm -r /etc/xdg/swayosd/style.css
+sudo rm -rf /etc/xdg/swayosd/style.css
 
 sudo cp -r ${dSource} /etc/xdg/swayosd/
 

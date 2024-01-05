@@ -290,6 +290,14 @@ SwayOSD LibInput Backend :
 sudo systemctl enable --now swayosd-libinput-backend.service
 ```
 
+Brightness Control
+
+Some devices may not have permission to write /sys/class/backlight/\*/brightness :
+
+```shell
+sudo usermod -a -G video $USER
+```
+
 #### Hyprsome
 
 [Refer to hyprsome doc](https://github.com/sopa0/hyprsome)
