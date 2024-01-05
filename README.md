@@ -294,6 +294,18 @@ sudo systemctl enable --now swayosd-libinput-backend.service
 
 [Refer to hyprsome doc](https://github.com/sopa0/hyprsome)
 
+#### Icon
+
+Copy [WhiteSur-dark/](/icons/WhiteSur-dark/) & [WhiteSur](/icons/WhiteSur/) to this path :
+
+```shell
+.local/share/icons/
+```
+
+###### look at [#commands](#Commands) for help
+
+Use nwg-look to set the icon theme.
+
 ---
 
 ## Commands
