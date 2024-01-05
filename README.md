@@ -9,7 +9,7 @@
 > [!IMPORTANT]  
 > Compatible with arch based distro laptop and desktop computers
 
-### Features
+## Features
 
 - Login and lock screen
 - Date and time + day of the week
@@ -18,16 +18,27 @@
 - Volume, and brightness buttons key binding
 - Print Screen button key binding to screen tools (screenshot, colorpicker)
 - Battery/Power status
+- Power menu
+- App launcher (rofi)
+- Notification
+- Screen display indicator for caps lock for volume and microphone
 
-<details>
-<summary><h3>Preview Screenshots</h3></summary>
+## Table of Contents :
 
-![screenshot](/assets/screenshot.png)
+- [Applications](#application)
+  - [General Application](#general-application)
+  - [Settings Application](#settings-application)
+- [Installation](#installation)
+  - [Dependencies](#dependencies)
+  - [Setup](#setup)
+- [Commands](#commands)
+- [Useful links](#useful-links)
 
-</details>
+---
 
-<details open>
-<summary><h3>Apps</h3></summary>
+## Application
+
+### General Application
 
 | browser            | [brave](https://aur.archlinux.org/packages/brave-bin) & [firefox](https://archlinux.org/packages/?name=firefox) |
 | ------------------ | --------------------------------------------------------------------------------------------------------------- |
@@ -95,10 +106,7 @@ log4cxx amdgpu-pro-oglp libxcrypt-compat amdgpu-pro-installer rocm-openCL
 
 ---
 
-</details>
-
-<details open>
-<summary><h3>Settings apps</h3></summary>
+### Settings Application
 
 | bluetooth manager   | [blueman](https://wiki.archlinux.org/title/Blueman)                              |
 | ------------------- | -------------------------------------------------------------------------------- |
@@ -121,12 +129,9 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 ---
 
-</details>
+## Installation
 
-<details open>
-<summary><h3>How to install</h3></summary>
-
-#### Install dependencies
+### Dependencies
 
 `hyprland` : wayland compositor
 
@@ -139,6 +144,8 @@ nm-connection-editor blueman pavucontrol easyeffects
 `hyprshot` : screenshots
 
 `hyprpicker` : wayland color picker
+
+`hyprsome` : awesome-like workspaces for hyprland
 
 `dunst` : notifications
 
@@ -156,30 +163,45 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 `polkit-gnome` : polkit authentication agent
 
-#### AUR
+##### AUR
 
 ```shell
 logo-ls swaylock-effects hyprpicker swayosd-git
 ```
 
-#### Pacman
+##### Pacman
 
 ```shell
 hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome
 ```
 
-#### Fonts
+##### Fonts (pacman)
 
 ```shell
 ttf-jetbrains-mono-nerd otf-firamono-nerd ttf-fantasque-nerd ttf-font-awesome ttf-iosevka-nerd ttf-nerd-fonts-symbols-common
 ```
 
+##### Cargo
+
+```shell
+cargo install hyprsome
+```
+
+###### [see hyprsome doc](https://github.com/sopa0/hyprsome)
+
+### Other dependencies
+
+> (dependencies that are sometimes missing and create problems)
+
+pacman
+
+```shell
+xorg-xhost
+```
+
 ---
 
-</details>
-
-<details open>
-<summary><h3>Post installation</h3></summary>
+### Setup
 
 #### Sddm
 
@@ -268,10 +290,13 @@ SwayOSD LibInput Backend :
 sudo systemctl enable --now swayosd-libinput-backend.service
 ```
 
-</details>
+#### Hyprsome
 
-<details>
-<summary><h3>Commands</h3></summary>
+[Refer to hyprsome doc](https://github.com/sopa0/hyprsome)
+
+---
+
+## Commands
 
 Copy :
 
@@ -315,33 +340,31 @@ or
 ls /usr/share/fonts/
 ```
 
-</details>
+---
 
-#### Other dependencies
+## Useful links
 
-pacman
+- [color picker](https://coolors.co/color-picker)
 
-```shell
-xorg-xhost
-```
+- [doc mankier](https://www.mankier.com/) collection of documentation
 
-<details>
-<summary><h3>Wallpaper Source</h3></summary>
+---
 
-![kusunoki-masashige](/wallpaper/kusunoki-masashige-monochrome.jpg)
-![kusunoki-masashige](/wallpaper/kusunoki-masashige.jpg)
-[flickr](https://www.flickr.com/photos/epler/527822294/in/photostream/) [Kusunoki_masashige](https://commons.m.wikimedia.org/wiki/File:Kusunoki_masashige.jpg) + [The_Course_of_Empire_Destruction](https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg)
+## Related documentation
 
-![Kusunoki_masashige](https://upload.wikimedia.org/wikipedia/commons/5/51/Kusunoki_masashige.jpg)
-![Thomas_The_Course_of_Empire_Destruction](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg/1280px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg)
-
-</details>
-
-<details>
-<summary><h3>Useful links</h3></summary>
-
-[color picker](https://rgbcolorpicker.com/)
-
-[doc mankier](https://www.mankier.com/)
-
-</details>
+- [hyprland](https://wiki.hyprland.org/)
+- [rofi](https://github.com/davatorium/rofi/wiki)
+- [ranger](https://github.com/ranger/ranger/wiki)
+- [spicetify](https://spicetify.app/docs/advanced-usage/installation)
+- [better discord](https://docs.betterdiscord.app/)
+- [swayidle github](https://github.com/swaywm/swayidle/blob/master/swayidle.1.scd) - [swayidle arch](https://man.archlinux.org/man/swayidle.1)
+- [swaylock effects](https://github.com/mortie/swaylock-effects/blob/master/swaylock.1.scd)
+- [swayosd](https://github.com/ErikReider/SwayOSD)
+- [waybar](https://github.com/Alexays/Waybar/wiki)
+- [nvchad](https://nvchad.com/docs/quickstart/install)
+- [nerdfont](https://www.nerdfonts.com/)
+- [btop++](https://github.com/aristocratos/btop)
+- [hyprsome](https://github.com/sopa0/hyprsome)
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [archlinux](https://wiki.archlinux.org/)
+- [endeavouros](https://discovery.endeavouros.com/)
