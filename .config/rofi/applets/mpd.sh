@@ -21,16 +21,16 @@ win_width='120px'
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Capture Desktop"
-	option_2=" Capture Area"
-	option_3=" Capture Window"
+	option_1=" Play"
+	option_2=" Pause"
+	option_3=" Back ward step"
 	option_4=" Capture in 5s"
 	option_5=" Color Picker"
 else
-	option_1=""
-	option_2=""
-	option_3=""
-	option_4=""
+	option_1=""
+	option_2=""
+	option_3=""
+	option_4=""
 	option_5=""
 fi
 

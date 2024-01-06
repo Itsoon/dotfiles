@@ -12,7 +12,7 @@ configuration {
     modi: "drun,run,filebrowser,window";
     show-icons:                 false;
     icon-theme:                 "WhiteSur";
-    font: "JetBrainsMono 12";
+    font: "JetBrainsMono 14";
     drun-display-format:        "{name}";
     run-command: "{cmd}";
 	run-list-command: "";
