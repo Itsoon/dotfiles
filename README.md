@@ -163,16 +163,20 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 `polkit-gnome` : polkit authentication agent
 
+`github-cli` : The GitHub CLI
+
+`bluetuith` : TUI-based bluetooth manager
+
 ##### AUR
 
 ```shell
-logo-ls swaylock-effects hyprpicker swayosd-git
+logo-ls swaylock-effects hyprpicker swayosd-git bluetuith
 ```
 
 ##### Pacman
 
 ```shell
-hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome
+hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome github-cli
 ```
 
 ##### Fonts (pacman)
@@ -202,6 +206,12 @@ xorg-xhost
 ---
 
 ### Setup
+
+#### GTK Theme
+
+- [WhiteSur-cursors](https://github.com/vinceliuice/WhiteSur-cursors)
+- [WhiteSur-icon-theme](https://github.com/vinceliuice/WhiteSur-icon-theme)
+- [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
 
 #### Sddm
 
