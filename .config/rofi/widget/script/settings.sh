@@ -51,7 +51,7 @@ run_cmd() {
 	elif [[ "$1" == '--opt2' ]]; then
 		.config/rofi/widget/panel.sh
 	elif [[ "$1" == '--opt3' ]]; then
-		blueman-manager
+		kitty bluetuith
 	elif [[ "$1" == '--opt4' ]]; then
 		kitty nvim /home/$USER/.config/hypr/hyprland.conf /home/$USER/.config/hypr/hyprpaper.conf
 	fi

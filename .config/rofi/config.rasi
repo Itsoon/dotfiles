@@ -29,8 +29,10 @@ configuration {
 /*****----- Global Properties -----*****/
 
 * {
-    primary-color:               #BA6277;
-    back-color:                  #121212;
+    primary-color:               #5f00ff;
+    // primary-color:               #BA6277;
+    back-color:                  #0e0e0f;
+    // back-color:                  #121212;
     txt-color:                  #CECECE;
 }
 
@@ -99,7 +101,7 @@ textbox-prompt-colon {
     enabled:                     true;
     // padding:                     6px 0 6px 6px;
     expand:                      false;
-    str:                         "rofi-drun";
+    str:                         "rofi";
     background-color:            inherit;
     text-color:                  @primary-color;
 }

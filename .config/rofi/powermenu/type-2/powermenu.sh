@@ -68,7 +68,7 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			reboot
 		elif [[ $1 == '--suspend' ]]; then
-			mpc -q pause
+			playerctl pause
 			systemctl suspend
 			swaylock -C /home/odin/.config/hypr/swaylock/config
 		elif [[ $1 == '--logout' ]]; then
