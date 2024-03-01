@@ -1,5 +1,5 @@
 import Battery from "resource:///com/github/Aylur/ags/service/battery.js";
-import Notifications from "resource:///com/github/Aylur/ags/service/notifications.js";
+// import Notifications from "resource:///com/github/Aylur/ags/service/notifications.js";
 import Audio from "resource:///com/github/Aylur/ags/service/audio.js";
 import options from "../options.js";
 import icons from "../icons.js";
@@ -11,7 +11,7 @@ import { showAbout } from "../about/about.js";
 import Gtk from "gi://Gtk?version=3.0";
 
 export function init() {
-  notificationBlacklist();
+  // notificationBlacklist();
   warnOnLowBattery();
   globals();
   tmux();

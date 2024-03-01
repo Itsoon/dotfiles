@@ -23,7 +23,7 @@ const windows = () => [
   // forMonitors(Desktop),
   forMonitors(FloatingDock),
   //   forMonitors(Lockscreen),
-  //   forMonitors(Notifications),
+    // forMonitors(Notifications),
   //   forMonitors(OSD),
   //   forMonitors(ScreenCorners),
     // forMonitors(TopBar),

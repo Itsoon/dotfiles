@@ -239,7 +239,7 @@ export default {
           "gnome-clock",
           "org.gnome.Calendar",
           "spotify",
-          "spotube",
+          // "spotube",
         ],
         { scss: "exclude" }
       ),
