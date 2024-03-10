@@ -1,3 +1,5 @@
+## CLI tools
+
 - mdcat cat for markdown
 - presenterm [link](https://github.com/mfontanini/presenterm)
 - onefetch

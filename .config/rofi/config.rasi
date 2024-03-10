@@ -12,7 +12,7 @@ configuration {
     modi: "drun,run,filebrowser,window";
     show-icons:                 false;
     icon-theme:                 "WhiteSur";
-    font: "JetBrainsMono 13";
+    font: "Ubuntu-B 13";
     drun-display-format:        "{name}";
     run-command: "{cmd}";
 	run-list-command: "";
@@ -104,7 +104,7 @@ textbox-prompt-colon {
     // padding:                     6px 0 6px 6px;
     margin:                      0 10px 0 30px;
     expand:                      false;
-    str:                         ">";
+    str:                         "";
     background-color:            inherit;
     text-color:                  #A0A0A0;
     // text-color:                  @primary-color;
