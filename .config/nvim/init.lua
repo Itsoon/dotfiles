@@ -56,9 +56,9 @@ vim.call('plug#begin')
 -- Plug('junegunn/fzf', { ['dir'] = '~/.fzf', ['do'] = './install --all' })
 
 -- Unmanaged plugin (manually installed and updated)
--- Plug('~/my-prototype-plugin')
 
 -- Discord Rich Presence 
 Plug('andweeb/presence.nvim')
+
 
 vim.call('plug#end')
