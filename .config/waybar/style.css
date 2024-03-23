@@ -31,6 +31,7 @@ tooltip label {
   margin: 8px 0px;
 
   color: #558;
+  background: none;
 }
 
 #workspaces button.active {
