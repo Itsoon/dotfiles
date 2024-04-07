@@ -1,22 +1,11 @@
 #!/usr/bin/env bash
 
-## Author : Aditya Shakya (adi1090x)
-## Github : @adi1090x
-#
-## Rofi   : Power Menu
-#
-## Available Styles
-#
-## style-1   style-2   style-3   style-4   style-5
-## style-6   style-7   style-8   style-9   style-10
-
 # Current Theme
 dir="$HOME/.config/rofi/powermenu/type-2"
 theme='style-4'
 
 # CMDs
-uptime="`uptime -p | sed -e 's/up //g'`"
-host=`hostname`
+uptime="$(uptime -p | sed -e 's/up //g')"
 
 # Options
 shutdown=''
@@ -32,7 +21,7 @@ rofi_cmd() {
 	rofi -dmenu \
 		-p "Uptime: $uptime" \
 		-mesg "Uptime: $uptime" \
-		-theme ${dir}/${theme}.rasi \
+		-theme "${dir}/${theme}".rasi \
 		-hover-select
 }
 
@@ -46,7 +35,7 @@ confirm_cmd() {
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-theme ${dir}/${theme}.rasi
+		-theme "${dir}/${theme}".rasi
 }
 
 # Ask for confirmation
@@ -70,7 +59,7 @@ run_cmd() {
 		elif [[ $1 == '--suspend' ]]; then
 			playerctl pause
 			systemctl suspend
-			swaylock -C /home/odin/.config/hypr/swaylock/config
+			hyprlock
 		elif [[ $1 == '--logout' ]]; then
 			hyprctl dispatch exit
 		fi
@@ -82,19 +71,19 @@ run_cmd() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
-    $shutdown)
-		run_cmd --shutdown
-        ;;
-    $reboot)
-		run_cmd --reboot
-        ;;
-    $lock)
-		swaylock -C /home/odin/.config/hypr/swaylock/config
-        ;;
-    $suspend)
-		run_cmd --suspend
-        ;;
-    $logout)
-		run_cmd --logout
-        ;;
+"$shutdown")
+	run_cmd --shutdown
+	;;
+"$reboot")
+	run_cmd --reboot
+	;;
+"$lock")
+	hyprlock
+	;;
+"$suspend")
+	run_cmd --suspend
+	;;
+"$logout")
+	run_cmd --logout
+	;;
 esac
