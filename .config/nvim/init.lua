@@ -1,64 +1,56 @@
-require "core"
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
 
+-- Default options:
+require("gruvbox").setup({
+  terminal_colors = true, -- add neovim terminal colors
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = {
+    strings = true,
+    emphasis = true,
+    comments = true,
+    operators = false,
+    folds = true,
+  },
+  strikethrough = true,
+  invert_selection = false,
+  invert_signs = false,
+  invert_tabline = false,
+  invert_intend_guides = false,
+  inverse = true, -- invert background for search, diffs, statuslines and errors
+  contrast = "", -- can be "hard", "soft" or empty string
+  palette_overrides = {},
+  overrides = {},
+  dim_inactive = false,
+  transparent_mode = true,
+})
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 
-local custom_init_path = vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1]
+-- neocord
 
-if custom_init_path then
-  dofile(custom_init_path)
-end
+require("neocord").setup({
+  -- General options
+  logo = "auto", -- "auto" or url
+  logo_tooltip = nil, -- nil or string
+  main_image = "language", -- "language" or "logo"
+  client_id = "1157438221865717891", -- Use your own Discord application client id (not recommended)
+  log_level = nil, -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error")
+  debounce_timeout = 10, -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
+  blacklist = {}, -- A list of strings or Lua patterns that disable Rich Presence if the current file name, path, or workspace matches
+  file_assets = {}, -- Custom file asset definitions keyed by file names and extensions (see default config at `lua/presence/file_assets.lua` for reference)
+  show_time = true, -- Show the timer
+  global_timer = false, -- if set true, timer won't update when any event are triggered
 
-require("core.utils").load_mappings()
-
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
-
--- bootstrap lazy.nvim!
-if not vim.loop.fs_stat(lazypath) then
-  require("core.bootstrap").gen_chadrc_template()
-  require("core.bootstrap").lazy(lazypath)
-end
-
-dofile(vim.g.base46_cache .. "defaults")
-vim.opt.rtp:prepend(lazypath)
-require "plugins"
-
--- VIM Plug
-
-local vim = vim
-local Plug = vim.fn['plug#']
-
-vim.g.python3_host_prog = '/usr/bin/python3'
-
-vim.call('plug#begin')
-
--- Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
--- Plug('junegunn/vim-easy-align')
-
--- Any valid git URL is allowed
--- Plug('https://github.com/junegunn/vim-github-dashboard.git')
-
--- Multiple Plug commands can be written in a single line using ; separators
--- Plug('SirVer/ultisnips'); Plug('honza/vim-snippets')
-
--- On-demand loading
--- Plug('preservim/nerdtree', { ['on'] = 'NERDTreeToggle' })
--- Plug('tpope/vim-fireplace', { ['for'] = 'clojure' })
-
--- Using a non-default branch
--- Plug('rdnetto/YCM-Generator', { ['branch'] = 'stable' })
-
--- Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
--- Plug('fatih/vim-go', { ['tag'] = '*' })
-
--- Plugin options
--- Plug('nsf/gocode', { ['tag'] = 'v.20150303', ['rtp'] = 'vim' })
-
--- Plugin outside ~/.vim/plugged with post-update hook
--- Plug('junegunn/fzf', { ['dir'] = '~/.fzf', ['do'] = './install --all' })
-
--- Unmanaged plugin (manually installed and updated)
-
--- Discord Rich Presence 
-Plug('andweeb/presence.nvim')
-
-
-vim.call('plug#end')
+  -- Rich Presence text options
+  editing_text = "Editing %s", -- Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
+  file_explorer_text = "Browsing %s", -- Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
+  git_commit_text = "Committing changes", -- Format string rendered when committing changes in git (either string or function(filename: string): string)
+  plugin_manager_text = "Managing plugins", -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
+  reading_text = "Reading %s", -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
+  workspace_text = "Working on %s", -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
+  line_number_text = "Line %s out of %s", -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
+  terminal_text = "Using Terminal", -- Format string rendered when in terminal mode.
+})

@@ -58,7 +58,7 @@
 #### AUR
 
 ```shell
-brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git
+brave-bin spotify amberol visual-studio-code-bin github-desktop-bin nvchad-git rofi-lbonn-wayland
 ```
 
 #### Pacman
@@ -137,7 +137,7 @@ nm-connection-editor blueman pavucontrol easyeffects
 
 `sddm` : graphical login program
 
-`swaylock-effects` : lock screen
+`hyprlock` : lock screen
 
 `hyprpaper` : wallpaper
 
@@ -170,13 +170,13 @@ nm-connection-editor blueman pavucontrol easyeffects
 ##### AUR
 
 ```shell
-logo-ls swaylock-effects hyprpicker swayosd-git bluetuith
+logo-ls hyprpicker hyprsome swayosd-git bluetuith
 ```
 
 ##### Pacman
 
 ```shell
-hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome github-cli
+hyprland hyprpaper hyprlock hypridle sddm dunst zsh playerctl waybar brightnessctl easyeffects alsa-utils xdg-desktop-portal-hyprland polkit-gnome github-cli
 ```
 
 ##### Fonts (pacman)
@@ -184,14 +184,6 @@ hyprland hyprpaper sddm dunst rofi zsh playerctl waybar brightnessctl easyeffect
 ```shell
 ttf-jetbrains-mono-nerd otf-firamono-nerd ttf-fantasque-nerd ttf-font-awesome ttf-iosevka-nerd ttf-nerd-fonts-symbols-common
 ```
-
-##### Cargo
-
-```shell
-cargo install hyprsome
-```
-
-###### [see hyprsome doc](https://github.com/sopa0/hyprsome)
 
 ### Other dependencies
 
@@ -307,10 +299,6 @@ Some devices may not have permission to write /sys/class/backlight/\*/brightness
 ```shell
 sudo usermod -a -G video $USER
 ```
-
-#### Hyprsome
-
-[Refer to hyprsome doc](https://github.com/sopa0/hyprsome)
 
 #### Icon
 
