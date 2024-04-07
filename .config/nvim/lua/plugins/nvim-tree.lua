@@ -111,7 +111,7 @@ return {
         },
       },
       filters = {
-        dotfiles = true,
+        dotfiles = false,
       },
       git = {
         ignore = true,
