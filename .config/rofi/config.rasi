@@ -1,12 +1,3 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
 /*****----- Configuration -----*****/
 configuration {
     modi: "drun,run,filebrowser,window";
@@ -15,12 +6,12 @@ configuration {
     font: "Ubuntu-B 13";
     drun-display-format:        "{name}";
     run-command: "{cmd}";
-	run-list-command: "";
-	run-shell-command: "{terminal} -e {cmd}";
-    /*---------- Fallback Icon ----------*/
-	run,drun {
-		fallback-icon: "application-x-addon";
-	}
+    run-list-command: "";
+    run-shell-command: "{terminal} -e {cmd}";
+/*---------- Fallback Icon ----------*/
+run,drun {
+  fallback-icon: "application-x-addon";
+}
     combi-modi: "drun,run";
     display-run: "Run";
 }
@@ -28,12 +19,15 @@ configuration {
 
 /*****----- Global Properties -----*****/
 
+@import                          "shared/colors.rasi"
+
 * {
-    primary-color:               #5f00ff;
-    // primary-color:               #BA6277;
-    back-color:                  #0e0e0f;
-    // back-color:                  #121212;
-    txt-color:                  #CECECE;
+    primary-color:               @purple;
+    back-color:                  @black-2;
+    txt-color:                   @light-grey;
+    2txt-color:                  @grey;
+    selected-back:               @dark-grey;
+    b-color:                     @grey-2;
 }
 
 /*****----- Main Window -----*****/
@@ -52,8 +46,6 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0;
-    border-color:                @primary-color;
     cursor:                      "default";
     /* Backgroud Colors */
     background-color:            transparent;
@@ -75,24 +67,12 @@ mainbox {
     padding:                     15px;
     border:                      2px;
     border-radius:               8px;
-    // border-color:                @primary-color;
-    border-color:                #6A6A6A;
+    border-color:                @b-color;
     background-color:            @back-color;
     children:                    [ "inputbar", "message", "listview" ];
 }
 
 /*****----- Inputbar -----*****/
-// inputbar {
-//     enabled:                     true;
-//     spacing:                     10px;
-//     margin:                      0px;
-//     padding:                     5px;
-//     border:                      2px;
-//     border-radius:               10px;
-//     border-color:                @primary-color;
-//     background-color:            transparent;
-//     text-color:                  @txt-color;
-// }
 
 prompt {
     enabled:                     false; /* drun text */
@@ -101,13 +81,11 @@ prompt {
 }
 textbox-prompt-colon {
     enabled:                     true;
-    // padding:                     6px 0 6px 6px;
     margin:                      0 10px 0 30px;
     expand:                      false;
     str:                         "";
     background-color:            inherit;
-    text-color:                  #A0A0A0;
-    // text-color:                  @primary-color;
+    text-color:                  @txt-color;
 }
 entry {
     enabled:                     true;
@@ -167,8 +145,7 @@ listview {
 }
 scrollbar {
     handle-width:                5px;
-    // handle-color:                @primary-color;
-    handle-color:                #6A6A6A;
+    handle-color:                @txt-color;
     border-radius:               0px;
     background-color:            transparent;
 }
@@ -198,7 +175,7 @@ element normal.active {
     text-color:                  @primary-color;
 }
 element selected.normal {
-    background-color:            #262626;
+    background-color:            @selected-back;
     text-color:                  @txt-color;
 }
 element selected.urgent {

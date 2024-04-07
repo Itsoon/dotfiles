@@ -16,6 +16,20 @@ configuration {
 @import                          "shared/colors.rasi"
 @import                          "shared/fonts.rasi"
 
+* {
+    background:     @black-2;
+    background-alt: #282A36FF;
+    selected:       @dark-grey;
+    active:         #50FA7BFF;
+    urgent:         #FF5555FF;
+    primary-color:               #BA6277;
+    back-color:                  #121212;
+    txt-color:                  @light-grey;
+    icon-selected: @light-grey;
+    selected-back: @dark-grey;
+    b-color:                     @grey-2;
+}
+
 /*
 USE_BUTTONS=YES
 */
@@ -35,9 +49,7 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px;
-    border-radius:               10px;
-    border-color:                @selected;
+    border:                      0px solid;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -48,9 +60,9 @@ mainbox {
     spacing:                     15px;
     margin:                      0px;
     padding:                     15px;
-    border:                      0px solid;
-    border-radius:               10px;
-    border-color:                @selected;
+    border:                      2px;
+    border-radius:               8px;
+    border-color:                @b-color;
     background-color:            transparent;
     children:                    [ "listview" ];
 }
@@ -65,7 +77,7 @@ inputbar {
     border-radius:               10px;
     border-color:                @selected;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @txt-color;
     children:                    [ "textbox-prompt-colon", "prompt"];
 }
 
@@ -73,21 +85,12 @@ dummy {
     background-color:            transparent;
 }
 
-textbox-prompt-colon {
-    enabled:                     true;
-    expand:                      false;
-    str:                         "";
-    padding:                     12px 16px;
-    border-radius:               10px;
-    background-color:            @urgent;
-    text-color:                  @background;
-}
 prompt {
     enabled:                     true;
     padding:                     12px;
     border-radius:               10px;
     background-color:            @active;
-    text-color:                  @background;
+    text-color:                  @txt-color;
 }
 
 /*****----- Message -----*****/
@@ -99,7 +102,7 @@ message {
     border-radius:               10px;
     border-color:                @selected;
     background-color:            @background-alt;
-    text-color:                  @foreground;
+    text-color:                  @txt-color;
 }
 textbox {
     background-color:            inherit;
@@ -116,7 +119,7 @@ error-message {
     border-radius:               10px;
     border-color:                @selected;
     background-color:            @background;
-    text-color:                  @foreground;
+    text-color:                  @txt-color;
 }
 
 /*****----- Listview -----*****/
@@ -139,7 +142,7 @@ listview {
     border-radius:               10px;
     border-color:                @selected;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @txt-color;
     cursor:                      "default";
 }
 
@@ -153,7 +156,7 @@ element {
     border-radius:               10px;
     border-color:                @selected;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @txt-color;
     cursor:                      pointer;
 }
 element-text {
@@ -165,6 +168,7 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            var(selected);
-    text-color:                  var(background);
+    background-color:            @selected-back;
+    text-color:                  @icon-selected;
 }
+
