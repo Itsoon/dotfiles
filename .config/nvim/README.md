@@ -20,3 +20,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 | Format                | key          |
 | --------------------- | ------------ |
 | toggle format on save | `<leader>uf` |
+
+Ctrl-h " delete one character
+Ctrl-w " delete one word
+Ctrl-u " delete entire line
+o " starts a new line below cursor and insert text

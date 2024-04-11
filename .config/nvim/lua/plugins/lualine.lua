@@ -23,6 +23,26 @@ return {
       return string.format("%d|%d", cur_line, cur_col)
     end
 
+    -- local function custom_progress()
+    --   local total_line = vim.api.nvim_buf_line_count(0)
+    --   local cur_line = vim.api.nvim_win_get_cursor(0)[1]
+    --   local percentage = math.floor((cur_line / total_line) * 100)
+    --
+    --   return string.format("%d", percentage) .. "%%"
+    -- end
+
+    local function custom_progress()
+      local cur = vim.fn.line(".")
+      local total = vim.fn.line("$")
+      if cur == 1 then
+        return "1" .. "%%"
+      elseif cur == total then
+        return "100" .. "%%"
+      else
+        return string.format("%2d%%%%", math.floor(cur / total * 100))
+      end
+    end
+
     local function get_nvim_working_directory()
       local full_path = vim.fn.getcwd()
       local last_folder = vim.fn.fnamemodify(full_path, ":t")
@@ -180,12 +200,11 @@ return {
             cond = lazy_status.has_updates,
             color = { fg = colors.orange },
           },
-          "encoding",
+          { "encoding" },
+          -- { custom_progress, padding = { left = 0, right = 1 } },
         },
 
-        lualine_y = {
-          -- { "progress" },
-        },
+        lualine_y = {},
         lualine_z = {
           {
             get_nvim_working_directory,
