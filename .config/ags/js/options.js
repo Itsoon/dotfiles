@@ -227,6 +227,7 @@ export default {
         [
           "org.gnome.Nautilus",
           "firefox",
+          "chromium",
           "brave",
           "discord",
           "signal-desktop",
