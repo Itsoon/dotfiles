@@ -25,3 +25,13 @@ Ctrl-h " delete one character
 Ctrl-w " delete one word
 Ctrl-u " delete entire line
 o " starts a new line below cursor and insert text
+
+Scrolling by Lines
+Scroll down by one line: Ctrl-E
+Scroll up by one line: Ctrl-Y
+Scrolling by Half a Screen
+Scroll down by half a screen: Ctrl-D
+Scroll up by half a screen: Ctrl-U
+Scrolling by Full Screen
+Scroll down by a full screen: Ctrl-F
+Scroll up by a full screen: Ctrl-B
