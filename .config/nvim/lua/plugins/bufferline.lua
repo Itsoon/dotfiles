@@ -16,7 +16,8 @@ return {
       separator_style = { "", "" },
       indicator = { icon = "|", style = "icon" },
       close_command = function(n)
-        require("mini.bufremove").delete(n, false)
+        -- require("mini.bufremove").delete(n, false)
+        LazyVim.ui.bufremove(n)
       end,
       -- stylua: ignore
       right_mouse_command = function(n) require("mini.bufremove").delete(n, false) end,

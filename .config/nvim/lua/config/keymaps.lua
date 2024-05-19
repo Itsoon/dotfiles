@@ -166,22 +166,7 @@ map("n", "<leader>|", "<C-W>v", { desc = "Split window right", remap = true })
 -- map("n", "<leader><tab>f", "<cmd>tabfirst<cr>", { desc = "First Tab" })
 -- map("n", "<leader><tab><tab>", "<cmd>tabnew<cr>", { desc = "New Tab" })
 
-local function closeBuffer()
-    local bd = require("mini.bufremove").delete
-    if vim.bo.modified then
-      local choice = vim.fn.confirm(("Save changes to %q?"):format(vim.fn.bufname()), "&Yes\n&No\n&Cancel")
-      if choice == 1 then -- Yes
-        vim.cmd.write()
-        bd(0)
-      elseif choice == 2 then -- No
-        bd(0, true)
-      end
-    else
-      bd(0)
-    end
-  end
-
 -- buffers
 map("n", "<tab>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
 map("n", "<s-tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Previous Buffer" })
-map("n", "<leader>x", closeBuffer, { desc = "Close Buffer" })
+map("n", "<leader>x", LazyVim.ui.bufremove, { desc = "Close Buffer" })
