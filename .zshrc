@@ -78,6 +78,7 @@ alias ls="logo-ls -A"
 alias vim='nvim'
 alias cat="bat"
 alias c='clear'
+alias neofetch="neofetch --ascii_distro linux"
 
 # Shell integrations
 eval "$(fzf --zsh)"
