@@ -114,7 +114,7 @@ return {
         dotfiles = false,
       },
       git = {
-        ignore = true,
+        ignore = false,
       },
     })
 
