@@ -1,0 +1,11 @@
+title vim rsp
+cd ~/dev/rsp/
+launch sh -c "nvim; exec zsh"
+
+new_tab cargo
+cd ~/dev/rsp/
+launch zsh
+
+new_tab vim conf rsp
+cd ~/.config/rsp/
+launch sh -c "nvim; exec zsh"

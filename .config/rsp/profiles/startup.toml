@@ -1,0 +1,8 @@
+[workspaces.2]
+run = ["chromium"]
+
+[workspaces.4]
+run = ["discord"]
+
+[workspaces.5]
+run = ["spotify"]

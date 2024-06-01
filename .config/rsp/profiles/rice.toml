@@ -1,0 +1,2 @@
+[workspaces.1]
+kitty_cmd = ["neofetch --ascii_distro linux", "pipes.sh", "cava"]

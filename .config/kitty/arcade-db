@@ -1,0 +1,11 @@
+title vim arcade-db
+cd ~/dev/arcade-db/
+launch sh -c "nvim; exec zsh"
+
+new_tab backend
+cd ~/dev/arcade-db/backend/
+launch zsh
+
+new_tab frontend
+cd ~/dev/arcade-db/frontend/
+launch zsh
