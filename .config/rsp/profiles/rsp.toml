@@ -1,2 +1,3 @@
-[workspaces.1]
-kitty_session = ["starter-profiles"]
+# [monitors.1.workspaces.x]
+# kitty_session = ["starter-profiles"]
+[workspaces.x]
