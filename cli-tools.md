@@ -1,8 +1,11 @@
 ## CLI tools
 
-- mdcat cat for markdown
-- presenterm [link](https://github.com/mfontanini/presenterm)
+- mdcat
+  cat for markdown
+- bat
+  better cat
 - onefetch
+  fetch github repo
 
 
 ## Space
