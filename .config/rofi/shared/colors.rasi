@@ -1,13 +1,32 @@
-* {
-    black-1:     #000000;
-    black-2:     #0e0e0f;
-    black-3:                  #121212;
+/* * {
+    black-1: #000000;
+    black-2: #0e0e0f;
+    black-3: #121212;
     dark-grey: #262626;
-    light-grey-2:     #e3dded;
-    light-grey:   #CECECE;
+    light-grey-2: #e3dded;
+    light-grey: #CECECE;
     grey: #A0A0A0;
     grey-2: #6A6A6A;
     white-2: #e3dded;
-    purple:       #5f00ff;
-    pastel-red:               #BA6277;
+    purple: #5f00ff;
+    pastel-red: #BA6277;
+} */
+
+/* gruvbox */
+* {
+    accent: #7DAEA3;
+    default-bg: #1D2021;
+    normal-bg: #303C3A;
+    input-bg: #2F302D;
+    black-1: #000000;
+    black-2: #0e0e0f;
+    black-3: #121212;
+    dark-grey: #262626;
+    light-grey-2: #e3dded;
+    light-grey: #CECECE;
+    grey: #A0A0A0;
+    grey-2: #6A6A6A;
+    white-2: #e3dded;
+    purple: #5f00ff;
+    pastel-red: #BA6277;
 }

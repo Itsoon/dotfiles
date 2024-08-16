@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+# /usr/bin/env bash
 
 ## Author  : Aditya Shakya (adi1090x)
 ## Github  : @adi1090x
@@ -7,19 +7,17 @@
 
 # Import Current Theme
 theme="$HOME/.config/rofi/shared/style.rasi"
-# theme="$HOME/.config/rofi/applets/type-3/style-2.rasi"
 
 # Theme Elements
 prompt='Screenshot'
-mesg="DIR: `xdg-user-dir PICTURES`/Screenshots"
-
+mesg="DIR: $HOME/Pictures/Screenshots"
 
 list_col='1'
 list_row='5'
 win_width='120px'
 
 # Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
+layout=$(cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2)
 if [[ "$layout" == 'NO' ]]; then
 	option_1=" Capture Desktop"
 	option_2=" Capture Area"
@@ -53,9 +51,9 @@ run_rofi() {
 }
 
 # Screenshot
-time=`date +%Y-%m-%d-%H-%M-%S`
-geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
-dir="`xdg-user-dir PICTURES`/Screenshots"
+time=$(date +%Y-%m-%d-%H-%M-%S)
+geometry=$(xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current')
+dir="$HOME/Pictures/Screenshots"
 file="Screenshot_${time}_${geometry}.png"
 
 if [[ ! -d "$dir" ]]; then
@@ -75,32 +73,32 @@ notify_view() {
 }
 
 # countdown
-countdown () {
-	for sec in `seq $1 -1 1`; do
+countdown() {
+	for sec in $(seq $1 -1 1); do
 		dunstify -t 1000 --replace=699 "Taking shot in : $sec"
 		sleep 1
 	done
 }
 
 # take shots
-shotnow () {
-	cd ${dir} && sleep 0.5 && hyprshot -c -m output -o $HOME/Pictures/Screenshots
+shotnow() {
+	sleep 0.5 && hyprshot -c -m output -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
-shot5 () {
+shot5() {
 	countdown '5'
-	sleep 1 && cd ${dir} && hyprshot -c -m output -o $HOME/Pictures/Screenshots
+	sleep 1 && hyprshot -c -m output -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
-shotwin () {
-	cd ${dir} && hyprshot -m window -o $HOME/Pictures/Screenshots
+shotwin() {
+	hyprshot -m window -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
-shotarea () {
-	cd ${dir} && hyprshot -m region -o $HOME/Pictures/Screenshots
+shotarea() {
+	hyprshot -m region -o $HOME/Pictures/Screenshots
 	# notify_view
 }
 
@@ -113,13 +111,12 @@ confirm_cmd() {
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'What color format?' \
-		-theme "$HOME/.config/rofi/powermenu/type-2"/"style-4".rasi
+		-theme "$HOME/.config/rofi/powermenu/type-2"/"style-4.rasi"
 }
 # Ask for confirmation
 confirm_exit() {
 	echo -e "hex\nrgb" | confirm_cmd
 }
-
 
 # Execute Command
 run_cmd() {
@@ -150,21 +147,19 @@ run_cmd() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
-    $option_1)
-		run_cmd --opt1
-        ;;
-    $option_2)
-		run_cmd --opt2
-        ;;
-    $option_3)
-		run_cmd --opt3
-        ;;
-    $option_4)
-		run_cmd --opt4
-        ;;
-    $option_5)
-		run_cmd --opt5
-        ;;
+$option_1)
+	run_cmd --opt1
+	;;
+$option_2)
+	run_cmd --opt2
+	;;
+$option_3)
+	run_cmd --opt3
+	;;
+$option_4)
+	run_cmd --opt4
+	;;
+$option_5)
+	run_cmd --opt5
+	;;
 esac
-
-

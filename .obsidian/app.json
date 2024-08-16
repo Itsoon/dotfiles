@@ -1,0 +1,14 @@
+{
+  "readableLineLength": true,
+  "livePreview": true,
+  "showLineNumber": true,
+  "vimMode": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "strictLineBreaks": true
+}

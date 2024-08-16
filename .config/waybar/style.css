@@ -101,6 +101,7 @@ button:hover {
 }
 
 #clock,
+#bluetooth,
 #battery,
 #cpu,
 #memory,
@@ -143,6 +144,10 @@ button:hover {
 
 #clock {
   background-color: #64727d;
+}
+
+#bluetooth {
+  background-color: #2D3436;
 }
 
 #battery {
