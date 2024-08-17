@@ -15,11 +15,12 @@
   ],
   "modules-center": [],
   "modules-right": [
+    // "temperature",
     "custom/hyprshade",
+    "bluetooth",
     "mpd",
     "idle_inhibitor",
     "pulseaudio",
-    "bluetooth",
     "network",
     "power-profiles-daemon",
     "backlight",
@@ -60,9 +61,9 @@
   },
 
     "bluetooth": {
-    "format": "  ",
-    "format-on": "   ",
-    "format-off": "   ",
+    "format": "",
+    "format-on": "",
+    "format-off": "",
     "format-connected": " {device_alias}",
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
@@ -111,7 +112,7 @@
   },
   "clock": {
     // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip-format": "<big>{:%y %b}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   },
   "cpu": {
@@ -191,6 +192,7 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
+    "on-click": "pavucontrol",
     "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
@@ -217,11 +219,10 @@
     "max-length": 25,
     "format-icons": {
       "spotify": "",
-      "default": "🎜"
+      "default": ""
     },
     "on-click": "playerctl play-pause",
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   }
 }

@@ -14,7 +14,6 @@ configuration {
 
 /*****----- Global Properties -----*****/
 @import                          "shared/colors.rasi"
-@import                          "shared/fonts.rasi"
 
 * {
     background:     @black-2;
@@ -109,7 +108,7 @@ textbox {
     text-color:                  inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
-    placeholder-color:           @foreground;
+    placeholder-color:           @back-color;
     blink:                       true;
     markup:                      true;
 }

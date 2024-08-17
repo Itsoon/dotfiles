@@ -1,0 +1,16 @@
+# AUR Packages
+spicetify-cli
+
+# Hyprland
+hyprshot
+hyprpicker
+swayosd-git
+
+rofi-lbonn-wayland
+
+#Applications
+spotify
+amberol
+
+#SHELL
+logo-ls

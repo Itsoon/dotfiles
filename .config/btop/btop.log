@@ -3,3 +3,318 @@
 2024/01/03 (20:02:07) | INFO: Logger set to DEBUG
 2024/01/03 (20:02:07) | DEBUG: Setting LC_ALL=en_US.UTF-8
 2024/01/03 (20:02:07) | INFO: Running on /dev/pts/1
+
+2024/06/17 (13:23:38) | ===> btop++ v.1.3.2
+2024/06/17 (13:23:38) | INFO: Logger set to DEBUG
+2024/06/17 (13:23:38) | DEBUG: Using locale en_US.UTF-8
+2024/06/17 (13:23:38) | INFO: Running on /dev/pts/1
+2024/06/17 (13:23:38) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/17 (13:23:38) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/17 (13:23:38) | DEBUG: Shared::init() : Initialized.
+
+2024/06/18 (16:33:01) | ===> btop++ v.1.3.2
+2024/06/18 (16:33:01) | INFO: Logger set to DEBUG
+2024/06/18 (16:33:01) | DEBUG: Using locale en_US.UTF-8
+2024/06/18 (16:33:01) | INFO: Running on /dev/pts/6
+2024/06/18 (16:33:01) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/18 (16:33:01) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/18 (16:33:01) | DEBUG: Shared::init() : Initialized.
+2024/06/18 (16:33:05) | DEBUG: Writing new config file
+2024/06/18 (16:33:05) | INFO: Quitting! Runtime: 00:00:04
+
+2024/06/18 (16:33:07) | ===> btop++ v.1.3.2
+2024/06/18 (16:33:07) | INFO: Logger set to DEBUG
+2024/06/18 (16:33:07) | DEBUG: Using locale en_US.UTF-8
+2024/06/18 (16:33:07) | INFO: Running on /dev/pts/6
+2024/06/18 (16:33:07) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/18 (16:33:07) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/18 (16:33:07) | DEBUG: Shared::init() : Initialized.
+2024/06/18 (16:33:10) | INFO: Quitting! Runtime: 00:00:03
+
+2024/06/18 (16:33:18) | ===> btop++ v.1.3.2
+2024/06/18 (16:33:18) | INFO: Logger set to DEBUG
+2024/06/18 (16:33:18) | DEBUG: Using locale en_US.UTF-8
+2024/06/18 (16:33:18) | INFO: Running on /dev/pts/6
+2024/06/18 (16:33:18) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/18 (16:33:18) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/18 (16:33:18) | DEBUG: Shared::init() : Initialized.
+2024/06/18 (16:33:20) | INFO: Quitting! Runtime: 00:00:02
+
+2024/06/18 (16:34:46) | ===> btop++ v.1.3.2
+2024/06/18 (16:34:46) | INFO: Logger set to DEBUG
+2024/06/18 (16:34:46) | DEBUG: Using locale en_US.UTF-8
+2024/06/18 (16:34:46) | INFO: Running on /dev/pts/4
+2024/06/18 (16:34:46) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/18 (16:34:46) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/18 (16:34:46) | DEBUG: Shared::init() : Initialized.
+2024/06/18 (16:34:48) | INFO: Quitting! Runtime: 00:00:02
+
+2024/06/18 (16:34:49) | ===> btop++ v.1.3.2
+2024/06/18 (16:34:49) | INFO: Logger set to DEBUG
+2024/06/18 (16:34:49) | DEBUG: Using locale en_US.UTF-8
+2024/06/18 (16:34:49) | INFO: Running on /dev/pts/4
+2024/06/18 (16:34:49) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/18 (16:34:49) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/18 (16:34:49) | DEBUG: Shared::init() : Initialized.
+
+2024/06/19 (20:27:21) | ===> btop++ v.1.3.2
+2024/06/19 (20:27:21) | INFO: Logger set to DEBUG
+2024/06/19 (20:27:21) | DEBUG: Using locale en_US.UTF-8
+2024/06/19 (20:27:21) | INFO: Running on /dev/pts/0
+2024/06/19 (20:27:21) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/19 (20:27:21) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/19 (20:27:21) | DEBUG: Shared::init() : Initialized.
+2024/06/19 (20:27:24) | DEBUG: Loading theme file: /usr/share/btop/themes/tomorrow-night.theme
+2024/06/19 (20:27:25) | DEBUG: Loading theme file: /usr/share/btop/themes/flat-remix-light.theme
+2024/06/19 (20:27:26) | DEBUG: Loading theme file: /usr/share/btop/themes/flat-remix.theme
+2024/06/19 (20:27:26) | DEBUG: Loading theme file: /usr/share/btop/themes/paper.theme
+2024/06/19 (20:27:27) | DEBUG: Loading theme file: /usr/share/btop/themes/horizon.theme
+2024/06/19 (20:27:27) | DEBUG: Loading theme file: /usr/share/btop/themes/everforest-dark-medium.theme
+2024/06/19 (20:27:28) | DEBUG: Loading theme file: /usr/share/btop/themes/nord.theme
+2024/06/19 (20:27:28) | DEBUG: Loading theme file: /usr/share/btop/themes/adapta.theme
+2024/06/19 (20:27:28) | DEBUG: Loading theme file: /usr/share/btop/themes/solarized_light.theme
+2024/06/19 (20:27:29) | DEBUG: Loading theme file: /usr/share/btop/themes/gruvbox_material_dark.theme
+2024/06/19 (20:27:33) | DEBUG: Loading theme file: /usr/share/btop/themes/whiteout.theme
+2024/06/19 (20:27:34) | DEBUG: Loading theme file: /usr/share/btop/themes/gruvbox_dark_v2.theme
+2024/06/19 (20:27:38) | DEBUG: Loading theme file: /usr/share/btop/themes/whiteout.theme
+2024/06/19 (20:27:38) | DEBUG: Loading theme file: /usr/share/btop/themes/gruvbox_material_dark.theme
+2024/06/19 (20:27:38) | DEBUG: Loading theme file: /usr/share/btop/themes/solarized_light.theme
+2024/06/19 (20:27:38) | DEBUG: Loading theme file: /usr/share/btop/themes/adapta.theme
+2024/06/19 (20:27:39) | DEBUG: Loading theme file: /usr/share/btop/themes/nord.theme
+2024/06/19 (20:27:39) | DEBUG: Loading theme file: /usr/share/btop/themes/everforest-dark-medium.theme
+2024/06/19 (20:27:39) | DEBUG: Loading theme file: /usr/share/btop/themes/horizon.theme
+2024/06/19 (20:27:39) | DEBUG: Loading theme file: /usr/share/btop/themes/paper.theme
+2024/06/19 (20:27:39) | DEBUG: Loading theme file: /usr/share/btop/themes/flat-remix.theme
+2024/06/19 (20:27:39) | DEBUG: Loading theme file: /usr/share/btop/themes/flat-remix-light.theme
+2024/06/19 (20:27:40) | DEBUG: Loading theme file: /usr/share/btop/themes/tomorrow-night.theme
+
+2024/06/21 (15:26:35) | ===> btop++ v.1.3.2
+2024/06/21 (15:26:35) | INFO: Logger set to DEBUG
+2024/06/21 (15:26:35) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/06/21 (15:26:35) | INFO: Running on /dev/pts/2
+2024/06/21 (15:26:35) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/21 (15:26:35) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/21 (15:26:35) | DEBUG: Shared::init() : Initialized.
+
+2024/06/22 (00:28:13) | ===> btop++ v.1.3.2
+2024/06/22 (00:28:13) | INFO: Logger set to DEBUG
+2024/06/22 (00:28:13) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/06/22 (00:28:13) | INFO: Running on /dev/pts/2
+2024/06/22 (00:28:13) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/22 (00:28:13) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/22 (00:28:13) | DEBUG: Shared::init() : Initialized.
+
+2024/06/22 (14:15:24) | ===> btop++ v.1.3.2
+2024/06/22 (14:15:24) | INFO: Logger set to DEBUG
+2024/06/22 (14:15:24) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/06/22 (14:15:24) | INFO: Running on /dev/pts/0
+2024/06/22 (14:15:24) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/22 (14:15:24) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/22 (14:15:24) | DEBUG: Shared::init() : Initialized.
+
+2024/06/27 (22:10:00) | ===> btop++ v.1.3.2
+2024/06/27 (22:10:00) | INFO: Logger set to DEBUG
+2024/06/27 (22:10:00) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/06/27 (22:10:00) | INFO: Running on /dev/pts/0
+2024/06/27 (22:10:00) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/27 (22:10:00) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/27 (22:10:00) | DEBUG: Shared::init() : Initialized.
+2024/06/27 (22:10:01) | INFO: Quitting! Runtime: 00:00:01
+
+2024/06/30 (01:17:57) | ===> btop++ v.1.3.2
+2024/06/30 (01:17:57) | INFO: Logger set to DEBUG
+2024/06/30 (01:17:57) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/06/30 (01:17:57) | INFO: Running on /dev/pts/0
+2024/06/30 (01:17:57) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/30 (01:17:57) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/30 (01:17:57) | DEBUG: Shared::init() : Initialized.
+
+2024/06/30 (01:18:07) | ===> btop++ v.1.3.2
+2024/06/30 (01:18:07) | INFO: Logger set to DEBUG
+2024/06/30 (01:18:07) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/06/30 (01:18:07) | INFO: Running on /dev/pts/0
+2024/06/30 (01:18:07) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/06/30 (01:18:07) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+2024/06/30 (01:18:07) | DEBUG: Shared::init() : Initialized.
+
+2024/07/03 (16:29:00) | ===> btop++ v.1.3.2
+2024/07/03 (16:29:00) | INFO: Logger set to DEBUG
+2024/07/03 (16:29:00) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/03 (16:29:00) | INFO: Running on /dev/pts/0
+2024/07/03 (16:29:00) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/03 (16:29:00) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/03 (16:29:00) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/03 (16:29:00) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/03 (16:29:00) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/03 (16:29:00) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/03 (16:29:00) | DEBUG: Shared::init() : Initialized.
+
+2024/07/04 (14:33:53) | ===> btop++ v.1.3.2
+2024/07/04 (14:33:53) | INFO: Logger set to DEBUG
+2024/07/04 (14:33:53) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/04 (14:33:53) | INFO: Running on /dev/pts/1
+2024/07/04 (14:33:53) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/04 (14:33:53) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/04 (14:33:53) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/04 (14:33:53) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/04 (14:33:53) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/04 (14:33:53) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/04 (14:33:53) | DEBUG: Shared::init() : Initialized.
+
+2024/07/05 (17:48:06) | ===> btop++ v.1.3.2
+2024/07/05 (17:48:06) | INFO: Logger set to DEBUG
+2024/07/05 (17:48:06) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/05 (17:48:06) | INFO: Running on /dev/pts/0
+2024/07/05 (17:48:06) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/05 (17:48:06) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/05 (17:48:06) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/05 (17:48:06) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/05 (17:48:06) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/05 (17:48:06) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/05 (17:48:06) | DEBUG: Shared::init() : Initialized.
+2024/07/05 (17:48:15) | INFO: Quitting! Runtime: 00:00:09
+
+2024/07/05 (17:49:04) | ===> btop++ v.1.3.2
+2024/07/05 (17:49:04) | INFO: Logger set to DEBUG
+2024/07/05 (17:49:04) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/05 (17:49:04) | INFO: Running on /dev/pts/1
+2024/07/05 (17:49:04) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/05 (17:49:04) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/05 (17:49:04) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/05 (17:49:04) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/05 (17:49:04) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/05 (17:49:04) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/05 (17:49:04) | DEBUG: Shared::init() : Initialized.
+
+2024/07/07 (13:44:33) | ===> btop++ v.1.3.2
+2024/07/07 (13:44:33) | INFO: Logger set to DEBUG
+2024/07/07 (13:44:33) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/07 (13:44:33) | INFO: Running on /dev/pts/2
+2024/07/07 (13:44:33) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/07 (13:44:33) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/07 (13:44:33) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/07 (13:44:33) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/07 (13:44:33) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/07 (13:44:33) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/07 (13:44:33) | DEBUG: Shared::init() : Initialized.
+2024/07/07 (13:44:43) | INFO: Quitting! Runtime: 00:00:10
+
+2024/07/09 (13:50:58) | ===> btop++ v.1.3.2
+2024/07/09 (13:50:58) | INFO: Logger set to DEBUG
+2024/07/09 (13:50:58) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/09 (13:50:58) | INFO: Running on /dev/pts/0
+2024/07/09 (13:50:58) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/09 (13:50:58) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/09 (13:50:58) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/09 (13:50:58) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/09 (13:50:58) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/09 (13:50:58) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/09 (13:50:58) | DEBUG: Shared::init() : Initialized.
+
+2024/07/09 (13:51:13) | ===> btop++ v.1.3.2
+2024/07/09 (13:51:13) | INFO: Logger set to DEBUG
+2024/07/09 (13:51:13) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/09 (13:51:13) | INFO: Running on /dev/pts/0
+2024/07/09 (13:51:13) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/09 (13:51:13) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/09 (13:51:13) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/09 (13:51:13) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/09 (13:51:13) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/09 (13:51:13) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/09 (13:51:13) | DEBUG: Shared::init() : Initialized.
+
+2024/07/09 (16:08:11) | ===> btop++ v.1.3.2
+2024/07/09 (16:08:11) | INFO: Logger set to DEBUG
+2024/07/09 (16:08:11) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/09 (16:08:11) | INFO: Running on /dev/pts/1
+2024/07/09 (16:08:11) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/09 (16:08:11) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/09 (16:08:11) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/09 (16:08:11) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/09 (16:08:11) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/09 (16:08:11) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/09 (16:08:11) | DEBUG: Shared::init() : Initialized.
+
+2024/07/10 (21:28:26) | ===> btop++ v.1.3.2
+2024/07/10 (21:28:26) | INFO: Logger set to DEBUG
+2024/07/10 (21:28:26) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/10 (21:28:26) | INFO: Running on /dev/pts/1
+2024/07/10 (21:28:27) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/10 (21:28:27) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/10 (21:28:27) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/10 (21:28:27) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/10 (21:28:27) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/10 (21:28:27) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/10 (21:28:27) | DEBUG: Shared::init() : Initialized.
+
+2024/07/10 (21:52:16) | ===> btop++ v.1.3.2
+2024/07/10 (21:52:16) | INFO: Logger set to DEBUG
+2024/07/10 (21:52:16) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/07/10 (21:52:16) | INFO: Running on /dev/pts/0
+2024/07/10 (21:52:16) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/07/10 (21:52:16) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/07/10 (21:52:16) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/07/10 (21:52:16) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/07/10 (21:52:16) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/07/10 (21:52:16) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/07/10 (21:52:16) | DEBUG: Shared::init() : Initialized.
+
+2024/08/14 (17:37:00) | ===> btop++ v.1.3.2
+2024/08/14 (17:37:00) | INFO: Logger set to DEBUG
+2024/08/14 (17:37:00) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/08/14 (17:37:00) | INFO: Running on /dev/pts/0
+2024/08/14 (17:37:00) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/08/14 (17:37:00) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/08/14 (17:37:00) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/08/14 (17:37:00) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/08/14 (17:37:00) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/08/14 (17:37:00) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/08/14 (17:37:00) | DEBUG: Shared::init() : Initialized.
+
+2024/08/16 (18:41:50) | ===> btop++ v.1.3.2
+2024/08/16 (18:41:50) | INFO: Logger set to DEBUG
+2024/08/16 (18:41:50) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/08/16 (18:41:50) | INFO: Running on /dev/pts/1
+2024/08/16 (18:41:50) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/08/16 (18:41:50) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/08/16 (18:41:50) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/08/16 (18:41:50) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/08/16 (18:41:50) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/08/16 (18:41:50) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/08/16 (18:41:50) | DEBUG: Shared::init() : Initialized.
+
+2024/08/16 (18:42:01) | ===> btop++ v.1.3.2
+2024/08/16 (18:42:01) | INFO: Logger set to DEBUG
+2024/08/16 (18:42:01) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/08/16 (18:42:01) | INFO: Running on /dev/pts/1
+2024/08/16 (18:42:01) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/08/16 (18:42:01) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/08/16 (18:42:01) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/08/16 (18:42:01) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/08/16 (18:42:01) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/08/16 (18:42:01) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/08/16 (18:42:01) | DEBUG: Shared::init() : Initialized.
+
+2024/08/16 (18:42:04) | ===> btop++ v.1.3.2
+2024/08/16 (18:42:04) | INFO: Logger set to DEBUG
+2024/08/16 (18:42:04) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/08/16 (18:42:04) | INFO: Running on /dev/pts/1
+2024/08/16 (18:42:04) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/08/16 (18:42:04) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/08/16 (18:42:04) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/08/16 (18:42:04) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/08/16 (18:42:04) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/08/16 (18:42:04) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/08/16 (18:42:04) | DEBUG: Shared::init() : Initialized.
+
+2024/08/16 (18:42:08) | ===> btop++ v.1.3.2
+2024/08/16 (18:42:08) | INFO: Logger set to DEBUG
+2024/08/16 (18:42:08) | DEBUG: Setting LC_ALL=en_US.UTF-8
+2024/08/16 (18:42:08) | INFO: Running on /dev/pts/1
+2024/08/16 (18:42:08) | INFO: Failed to load libnvidia-ml.so, NVIDIA GPUs will not be detected: libnvidia-ml.so.1: cannot open shared object file: No such file or directory
+2024/08/16 (18:42:08) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2024/08/16 (18:42:08) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2024/08/16 (18:42:08) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2024/08/16 (18:42:08) | WARNING: ROCm SMI: Failed to get GPU power usage
+2024/08/16 (18:42:08) | WARNING: ROCm SMI: Failed to get PCIe throughput
+2024/08/16 (18:42:08) | DEBUG: Shared::init() : Initialized.

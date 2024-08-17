@@ -1,9 +1,9 @@
 /*****----- Configuration -----*****/
 configuration {
     modi: "drun,run,filebrowser,window";
-    show-icons:                 false;
-    icon-theme:                 "WhiteSur";
-    font: "Ubuntu-B 13";
+    show-icons:                 true;
+    icon-theme:                 "Gruvbox-Plus-Dark";
+    font: "Ubuntu 13";
     drun-display-format:        "{name}";
     run-command: "{cmd}";
     run-list-command: "";
@@ -22,7 +22,7 @@ run,drun {
 @import                          "shared/colors.rasi"
 
 * {
-    primary-color:               @purple;
+    primary-color:               @accent;
     back-color:                  @black-2;
     txt-color:                   @light-grey;
     2txt-color:                  @grey;
@@ -68,7 +68,7 @@ mainbox {
     border:                      2px;
     border-radius:               8px;
     border-color:                @b-color;
-    background-color:            @back-color;
+    background-color:            @default-bg;
     children:                    [ "inputbar", "message", "listview" ];
 }
 
@@ -80,7 +80,7 @@ prompt {
     text-color:                  inherit;
 }
 textbox-prompt-colon {
-    enabled:                     true;
+    enabled:                     false;
     margin:                      0 10px 0 30px;
     expand:                      false;
     str:                         "";
@@ -90,6 +90,10 @@ textbox-prompt-colon {
 entry {
     enabled:                     true;
     text-color:                  @txt-color;
+    background-color:            @input-bg;
+    padding:                     8px 10px;
+    margin:                      0 8px 0 8px;
+    border-radius:               10px;
     placeholder:                 "";
 }
 num-filtered-rows {
@@ -124,7 +128,7 @@ case-indicator {
 listview {
     enabled:                     true ;
     columns:                     1;
-    lines:                       8;
+    lines:                       6;
     cycle:                       false;
     dynamic:                     true;
     scrollbar:                   true;
@@ -138,7 +142,6 @@ listview {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @primary-color;
     background-color:            transparent;
     text-color:                  @txt-color;
     cursor:                      "default";
@@ -154,16 +157,16 @@ scrollbar {
 element {
     enabled:                     true;
     spacing:                     10px;
-    margin:                      0 10px 0 40px;
+    margin:                      0 8px 0 8px;
     padding:                     5px 10px;
     border:                      0px solid;
     border-radius:               10px;
-    background-color:            #00FFEE;
+    background-color:            @accent;
     text-color:                  @txt-color;
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            @back-color;
+    background-color:            transparent;
     text-color:                  @txt-color;
 }
 element normal.urgent {
@@ -175,34 +178,34 @@ element normal.active {
     text-color:                  @primary-color;
 }
 element selected.normal {
-    background-color:            @selected-back;
-    text-color:                  @txt-color;
+    background-color:            @normal-bg;
+    text-color:                  @accent;
 }
 element selected.urgent {
-    background-color:            @back-color;
+    background-color:            transparent;
     text-color:                  @txt-color;
 }
 element selected.active {
-    background-color:            @back-color;
+    background-color:            transparent;
     text-color:                  @txt-color;
 }
 element alternate.normal {
-    background-color:            @back-color;
+    background-color:            transparent;
     text-color:                  @txt-color;
 }
 element alternate.urgent {
-    background-color:            @back-color;
+    background-color:            transparent;
     text-color:                  @txt-color;
 }
 element alternate.active {
-    background-color:            #00FFEE;
+    background-color:            transparent;
     text-color:                  @txt-color;
 }
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
     margin:                      0 10px 0 0;
-    size:                        30px;
+    size:                        35px;
     cursor:                      inherit;
 }
 element-text {
@@ -219,7 +222,7 @@ button {
     padding:                     0;
     border:                      0px solid;
     border-radius:               10px;
-    border-color:                @primary-color;
+    border-color:                @accent;
     background-color:            @back-color;
     text-color:                  inherit;
     cursor:                      pointer;
@@ -236,7 +239,7 @@ message {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
-    border-color:                @primary-color;
+    border-color:                @accent;
     background-color:            transparent;
     text-color:                  @txt-color;
 }
@@ -244,7 +247,7 @@ textbox {
     padding:                     8px 10px;
     border:                      0px solid;
     border-radius:               10px;
-    border-color:                @primary-color;
+    border-color:                @accent;
     background-color:            @back-color;
     text-color:                  @txt-color;
     vertical-align:              0.5;
@@ -258,7 +261,7 @@ error-message {
     padding:                     10px;
     border:                      2px solid;
     border-radius:               10px;
-    border-color:                @primary-color;
+    border-color:                @accent;
     background-color:            @back-color;
     text-color:                  @txt-color;
 }
