@@ -77,6 +77,7 @@ function yy() {
 }
 
 # Aliases
+alias bat="bat --theme=gruvbox-dark"
 alias copycmd="cliphist store"
 alias ls="logo-ls -A"
 alias vim='nvim'
