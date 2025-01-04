@@ -11,7 +11,7 @@
   "modules-left": [
     "hyprland/workspaces",
     "hyprland/window",
-    "custom/media"
+    "custom/mediaplayer"
   ],
   "modules-center": [],
   "modules-right": [
@@ -55,15 +55,19 @@
     }
   },
 
-  "custom/hyprshade" : {
-    "format" : "shader",
-    "on-click": "hyprshade toggle blue-light-filter"
-  },
+"custom/hyprshade": {
+    "exec": "~/.config/waybar/scripts/blue-light-filter.sh",
+    "interval": 5,
+
+    "return-type": "json",
+    "on-click": "~/.config/waybar/scripts/toggle-blue-light-filter.sh",
+    "format": "{}"
+},
 
     "bluetooth": {
     "format": "",
-    "format-on": "",
-    "format-off": "",
+    "format-on": "  ",
+    "format-off": "  ",
     "format-connected": " {device_alias}",
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
@@ -102,8 +106,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated":   "  👾",
+      "deactivated": "  😴"
     }
   },
   "tray": {
@@ -200,7 +204,7 @@
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
-      "headphone": "",
+      "headphone": " ",
       "hands-free": "",
       "headset": "",
       "phone": "",
@@ -213,16 +217,14 @@
       ]
     }
   },
-  "custom/media": {
-    "format": "{icon} {}",
+"custom/mediaplayer": {
+    "exec": "cd $HOME/.config/waybar/waybar-mediaplayer; source .venv/bin/activate; ./src/mediaplayer monitor",
     "return-type": "json",
-    "max-length": 25,
-    "format-icons": {
-      "spotify": "",
-      "default": ""
-    },
+    "format": "{}",
     "on-click": "playerctl play-pause",
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-  }
+    "on-scroll-up": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer next",
+    "on-scroll-down": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer previous",
+    "min-length": 20,
+    "max-length": 20
+}
 }

@@ -1,0 +1,15 @@
+gtk-titlebar = false
+background-opacity = 0.8
+
+font-size = 12
+font-family = "JetBrains Mono Bold"
+font-synthetic-style = bold
+font-style-bold = true
+background = #090909
+cursor-color = #0090FF
+cursor-style = block
+
+shell-integration-features = no-cursor
+
+
+theme = dark:GruvboxDarkHard,light:GruvboxLight

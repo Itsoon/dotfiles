@@ -78,8 +78,9 @@ function yy() {
 
 # Aliases
 alias bat="bat --theme=gruvbox-dark"
+alias icat="kitten icat"
 alias copycmd="cliphist store"
-alias ls="logo-ls -A"
+alias ls="eza --icons=always"
 alias vim='nvim'
 alias c='clear'
 
