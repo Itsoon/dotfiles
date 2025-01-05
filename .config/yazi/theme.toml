@@ -1,0 +1,48 @@
+[flavor]
+# use = "gruvbox-dark"
+[manager]
+cwd = { fg = "#D4D4D4", bg = "#000000" }
+find_keyword = { fg = "#D4D4D4", bg = "#000000" }
+hovered = { fg = "#353535", bg = "#D79921", bold = true }
+# preview_hovered = { fg = "#F53C3C", bg = "#000000" }
+
+tab_active = { fg = "#F53C3C", bg = "#353535", bold = true }
+[status]
+mode_normal = { fg = "#353535", bg = "#D79921" }
+separator_style = { fg = "#353535", bg = "#353535" }
+mode_select = { fg = "#353535", bg = "#8EC07C" }
+[icon]
+dirs = [
+  # { name = "desktop", text = "🖥️" },
+  { name = "pictures", text = "󰉏", fg_dark = "#FFE36C" },
+  # { name = "music", text = "" },
+  { name = "downloads", text = "󰉍", fg_dark = "#FFE36C" },
+]
+prepend_conds = [
+  { if = "hidden & dir", text = "👻" },             # Hidden directories
+  { if = "dir", text = "󰉋", fg_dark = "#FFE36C" }, # Directories
+  { if = "!(dir | link)", text = "📄" },            # Normal files (not directories or symlinks)
+]
+[filetype]
+rules = [
+  # Images
+  { mime = "image/*", fg = "yellow" },
+
+  # Videos
+  { mime = "video/*", fg = "yellow" },
+  { mime = "audio/*", fg = "magenta" },
+
+  # Empty files
+  { mime = "inode/x-empty", fg = "cyan" },
+
+  # Orphan symbolic links
+  { name = "*", is = "orphan", fg = "red" },
+
+  # ...
+
+  # Fallback
+  # { name = "*", fg = "white" },
+  { name = "*/", fg = "white" },
+]
+[input]
+border = { fg = "#D79921" }
