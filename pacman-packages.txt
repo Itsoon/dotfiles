@@ -30,8 +30,16 @@ nwg-look
 parucontrol
 blueman
 
-#CLI tools
+#CLI tools - term
+
+ghostty
+kitty
+
+neovim
 ranger
+yazi
+
+eza
 btop
 htop
 github-cli
@@ -45,16 +53,35 @@ thefuck
 networkmanager
 playerctl
 brightnessctl
+yarn
 
 #Hyprland
 hyprpaper
+hypridle
+hyprcursor 
+hyprlock
+hyprpicker
 
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 
 dunst
+swaync
 wl-clipboard
 cliphist
+rofi-wayland
 
 polkit-gnome
+
+
+#
+v4l2loopback
+v4l2loopback-dkms
+linux-headers
+v4l-utils
+v4l2loopback-utils
+bluez bluez-utils
+virtio-win
+file-roller
+qemu
