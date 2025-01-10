@@ -6,6 +6,10 @@
 <img src="https://img.shields.io/github/stars/Itsoon-xyz/Dotfile?color=%23c4a7e7&style=for-the-badge&labelColor=1a1b1f">
 </div>
 
+![image](https://github.com/user-attachments/assets/337e7229-6045-4d15-bbd6-da57a6d34cd8)
+![image](https://github.com/user-attachments/assets/0eb921ec-5905-4ff1-a828-709a81b9285d)
+
+
 | package name                | description          |
 | --------------------------- | -------------------- |
 | polkit-gnome                | authentication agent |
