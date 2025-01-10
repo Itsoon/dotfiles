@@ -1,0 +1,175 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "top",
+  "control-center-positionX": "center",
+  "control-center-positionY": "top",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "cssPriority": "application",
+  "control-center-width": 450,
+  "control-center-height": 650,
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
+  "notification-2fa-action": true,
+  "notification-inline-replies": true,
+  "notification-window-width": 350,
+  "notification-icon-size": 60,
+  "notification-body-image-height": 180,
+  "notification-body-image-width": 180,
+  "timeout": 1,
+  "timeout-low": 1,
+  "timeout-critical": 10,
+  "fit-to-screen": false,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when available",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+  "widgets": [
+    "mpris",
+    "title",
+    "notifications",
+    "volume",
+    "backlight",
+    "buttons-grid"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notification Center",
+      "clear-all-button": true,
+      "button-text": "󰆴"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": "Notification Center!"
+    },
+    "mpris": {
+      "image-size": 80,
+      "image-radius": 0
+    },
+
+"volume": {
+  "type": "object",
+  "description": "Slider to control pulse volume",
+  "additionalProperties": false,
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Text displayed in front of the volume slider",
+      "default": "Volume"
+    },
+    "show-per-app": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show per app volume control"
+    },
+    "show-per-app-icon": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show application icon in per app control"
+    },
+    "show-per-app-label": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show application name in per app control"
+    },
+    "empty-list-label": {
+      "type": "string",
+      "default": "No active sink input",
+      "description": "Text displayed when there are not active sink inputs"
+    },
+    "expand-button-label": {
+      "type": "string",
+      "default": "⇧",
+      "description": "Label displayed on button to show per app volume control"
+    },
+    "collapse-button-label": {
+      "type": "string",
+      "default": "⇩",
+      "description": "Label displayed on button to hide per app volume control"
+    },
+    "icon-size": {
+      "type": "integer",
+      "default": 24,
+      "description": "Size of the application icon in per app volume control"
+    },
+    "animation-type": {
+      "type": "string",
+      "default": "slide_down",
+      "description": "Animation type for menu",
+      "enum": ["slide_down", "slide_up", "none"]
+    },
+    "animation-duration": {
+      "type": "integer",
+      "default": 250,
+      "description": "Duration of animation in milliseconds"
+    },
+    "source-selection": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow selection of audio sources"
+    }
+  }
+},
+    "backlight": {
+      "label": "󰃟 ",
+      "device": "amdgpu_bl1" 
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰝟",
+          "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+          "type": "toggle"
+        },
+        {
+          "label": "󰍭",
+          "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+          "type": "toggle"
+        },
+        {
+          "label": "",
+          "command": "kitty nmtui"
+        },
+        {
+          "label": "",
+          "command": "blueman-manager"
+        },
+        {
+          "label": "󰤄",
+          "command": "swaync-client -d",
+          "type": "toggle"
+        },
+        {
+          "label": "󰀟",
+          "command": "gnome-network-displays"
+        },
+        {
+          "label": "",
+          "command": "kitty bash -i -c 'Settings'"
+        },
+        {
+          "label": "",
+          "command": "kitty bash -i -c 'tasks'"
+        },
+        {
+          "label": "",
+          "command": "hyprlock"
+        },
+        {
+          "label": "",
+          "command": "reboot"
+        },
+        {
+          "label": "",
+          "command": "shutdown now"
+        }
+      ]
+    }
+  }
+}
