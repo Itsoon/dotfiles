@@ -42,6 +42,9 @@ bindkey -e
 bindkey '^k' history-search-backward
 bindkey '^j' history-search-forward
 
+# Wordchars for a satisfying CTRL+W
+WORDCHARS='*?_-!~;,'
+
 # Set default editor
 export EDITOR=nvim
 export VISUAL=nvim
