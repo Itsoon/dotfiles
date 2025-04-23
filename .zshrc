@@ -50,6 +50,9 @@ export EDITOR=nvim
 export VISUAL=nvim
 export PATH=$PATH:$HOME/go/bin
 
+# fix terminal issues with SSH
+export TERM=xterm-256color
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -84,7 +87,6 @@ alias bat="bat --theme=gruvbox-dark"
 alias icat="kitten icat"
 alias copycmd="cliphist store"
 alias ls="eza --icons=always"
-alias vim='nvim'
 alias c='clear'
 
 # Shell integrations
