@@ -1,6 +1,6 @@
 [flavor]
 # use = "gruvbox-dark"
-[mgr]
+[manager]
 cwd = { fg = "#D4D4D4", bg = "#000000" }
 find_keyword = { fg = "#D4D4D4", bg = "#000000" }
 hovered = { fg = "#353535", bg = "#D79921", bold = true }

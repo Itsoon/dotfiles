@@ -6,8 +6,6 @@
   min-height: 0;
 }
 
-@import "./waybar-mediaplayer/src/style.css";
-
 window#waybar {
   /*background-color: rgba(43, 48, 59, 0.5);*/
   background-color: rgba(9, 9, 9, 0.5);
